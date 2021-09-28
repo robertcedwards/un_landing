@@ -1,0 +1,76 @@
+@media (max-width: 991px) {
+  .navbar-scroll {
+    background-color: #fff;
+  }
+}      
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scroll .navbar-brand {
+  color: #4f4f4f;
+}
+.navbar-scrolled .navbar-brand {
+  color: #4f4f4f;
+}
+@media (min-width: 768px) and (max-width: 800px) {
+  #intro {
+    height: 100vh;
+  }
+}
+@media (min-width: 850px) {
+  #intro {
+    height: 100vh;
+  }
+}
+
+.card {
+	    border-radius: 8px;
+}
+
+      .page-header {
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-position: 50%;
+      }
+      .min-vh-85 {
+        min-height: 85vh;
+      }
+      .border-radius-section {
+        border-radius: 10rem;
+      }
+      .border-top-start-radius-0 {
+        border-top-left-radius: 0;
+      }
+      .border-top-end-radius-0 {
+        border-top-right-radius: 0;
+      }
+      .border-bottom-end-radius-0 {
+        border-bottom-right-radius: 0;
+      }
+      .z-index-0 {
+        z-index: 0;
+      }
+      .blur {
+        -webkit-backdrop-filter: saturate(200%) blur(30px);
+        backdrop-filter: saturate(200%) blur(30px);
+        background-color: hsla(0,0%,100%,.8);
+      }
+      .text-gradient.text-gradient-primary {
+        background-image: linear-gradient(310deg,#023591,#7c2eb2);
+      }
+      .text-gradient {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        z-index: 1;
+      }
+      .btn.bg-gradient-primary {
+        color: #fff;
+      }
+      .bg-gradient-primary {
+        background-image: linear-gradient(310deg,#023591,#7c2eb2);
+      }
