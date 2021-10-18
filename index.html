@@ -161,13 +161,14 @@
 	            <div class="row">
 	              <div class="col-xl-7 col-lg-8 col-md-10 d-md-flex flex-row mx-auto">
 	                <div class="form-outline flex-fill me-1 mb-3 mb-md-0">
-			 <form name="recaptcha" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-  				<p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
-			<input type="email" id="formControlEmail0" class="form-control" />
-	                  <label class="form-label" for="formControlEmail0">Enter your work email</label>
+                    <form name="recaptcha" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true"  data-netlify="true">
+                    <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
+                    <input type="email" id="formControlEmail0" class="form-control" />
+                    <label class="form-label" for="formControlEmail0">Enter your work email</label>
 	                </div>
+                  <div data-netlify-recaptcha="true"></div>
 	                <a href="#!" type="button" class="btn btn-dark ms-md-2">Confirm</a>
-			</form>
+			            </form>
 	              </div>
 	            </div>
 	          </div>
