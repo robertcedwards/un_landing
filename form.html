@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Username Guardian by Samurai | Username Moderation Solution</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="/css/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <form name="recaptcha" id="work-email" action="/thankyou.html method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true"  data-netlify="true">
+        <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
+        <input type="email" id="work-email" class="form-control" />
+        <label class="form-label" for="work-email">Enter your work email</label>
+        <div data-netlify-recaptcha="true"></div>
+        </div>
+        <button type="sumbit" class="btn btn-dark ms-md-2">Confirm</button>
+     </form>
+</body>
+</html>
