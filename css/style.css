@@ -5,10 +5,14 @@
 }      
 .navbar-scroll .nav-link,
 .navbar-scroll .fa-bars,
-.navbar-scroll .navbar-brand {
-  color: #4f4f4f;
+.navbar-scroll .navbar-brand,
+.navbar-scroll .navbar-sub {
+  color: #fff;
 }
-.navbar-scrolled .navbar-brand {
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scrolled .navbar-brand, 
+.navbar-scroll .navbar-sub {
   color: #4f4f4f;
 }
 @media (min-width: 768px) and (max-width: 800px) {
@@ -80,4 +84,9 @@
 
 .form-label.json-result {
 	word-wrap: break-word;
+}
+
+.navbar-brand-subhead {
+	text-align: right;
+	margin-right: 1rem;
 }
