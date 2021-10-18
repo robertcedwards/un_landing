@@ -161,11 +161,11 @@
 	            <div class="row">
 	              <div class="col-xl-7 col-lg-8 col-md-10 d-md-flex flex-row mx-auto">
 	                <div class="form-outline flex-fill me-1 mb-3 mb-md-0">
-                    <form name="recaptcha" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true"  data-netlify="true">
+                    <form name="recaptcha" id="work-email"netlify method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true"  data-netlify="true">
                     <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
-                    <input type="email" id="formControlEmail0" class="form-control" />
-                    <label class="form-label" for="formControlEmail0">Enter your work email</label>
-                    <div data-netlify-recaptcha="true"></div>
+                    <input type="email" id="work-email" class="form-control" />
+                    <label class="form-label" for="work-email">Enter your work email</label>
+                    
 	                </div>
 	                <a href="#!" type="button" class="btn btn-dark ms-md-2">Confirm</a>
 			            </form>
@@ -841,6 +841,21 @@
 		</div>
     <!-- Copyright -->
   </footer>
+    <script>
+      document.querySelector("form").addEventListener("submit", handleSubmit);
+
+      const handleSubmit = (e) => {
+        e.preventDefault()
+        let myForm = document.getElementById('work-email');
+        let formData = new FormData(myForm)
+        fetch('/', {
+          method: 'POST',
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
+        }).then(() => console.log('Form successfully submitted')).catch((error) =>
+          alert(error))
+      }
+    </script>     
     <!-- MDB -->
     <script type="text/javascript" src="/js/mdb.min.js"></script>
     <!-- Custom scripts -->
