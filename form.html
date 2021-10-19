@@ -15,12 +15,34 @@
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
+	
+	        <div class="card text-center mx-auto">
+	          <div class="card-body p-5 text-center mx-auto">
+	
+	            <p class="text-muted mb-4">Use your work email to verify that you are not a robot.</p>
+	            <div class="row">
+	              <div class="col-xl-7 col-lg-8 col-md-10 d-md-flex flex-row mx-auto">
+	                <div class="form-outline flex-fill me-1 mb-3 mb-md-0">
     <form name="recaptcha" id="work-email" action="/gated-content.html" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true"  data-netlify="true">
         <p class="hidden"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
-        <input type="email" id="work-email" class="form-control" />
-        <label class="form-label" for="work-email">Enter your work email</label>
+        <div class="input-group">
+			<div class="form-outline">
+	        	<input type="email" id="work-email" class="form-control" />
+	        	<label class="form-label" for="work-email">Enter your work email</label>
+			</div>
+			
+			<button type="sumbit" class="btn btn-dark ms-md-2">Confirm</button>
+        </div>
         <div data-netlify-recaptcha="true"></div>
-        <button type="sumbit" class="btn btn-dark ms-md-2">Confirm</button>
      </form>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+     
+    <script type="text/javascript" src="/js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="/js/script.js"></script>
 </body>
 </html>
