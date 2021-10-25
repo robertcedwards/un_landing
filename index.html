@@ -36,7 +36,7 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #000;">
       <div class="container">
 	    <div class="navbar-brand-wrapper">
-        	<a class="navbar-brand pt-0 pb-0" href="#!" style="line-height: 1;">Username Guardian</a>
+        	<div class="navbar-brand pt-0 pb-0" href="#!" style="line-height: .5; color:#fff;">Username Guardian</div>
         	<p class="navbar-brand-subhead mb-0">by Samurai</p>
 	    
 	    </div>
@@ -44,19 +44,19 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse align-items-start" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#see-it-in-action">See it in Action</a>
+              <a class="nav-link" href="#DEMO">See it in Action</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#our-approach">Username Moderation</a>
+              <a class="nav-link" href="#UNM">Username Moderation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sam">Cyber Guardian</a>
+              <a class="nav-link" href="#CB">Cyber Guardian</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sam">About Us</a>
+              <a class="nav-link" href="#AU">About Us</a>
             </li>
           </ul>
           <ul class="navbar-nav d-flex flex-row">
@@ -88,16 +88,34 @@
               <p class="lead font-weight-normal mb-4">
                 The most effective solution for guarding your communities from users with disruptive identities. Built for automation. Scalable for any application.
               </p>
-              <button type="button" class="btn btn-dark btn-rounded btn-lg">
+              <button type="button" class="btn btn-dark btn-rounded btn-lg" onclick="window.location.href = '#UNM';">
                 Learn More
               </button>
               
-              <button type="button" class="btn btn-dark btn-rounded btn-lg">
+              <button type="button" class="btn btn-dark btn-rounded btn-lg" onclick="window.location.href = '#DEMO';">
                 Try it Now
               </button>
             </div>
-            <div class="col-lg-6 col-xl-6">
-              <img src="/img/placeholder1.png" alt="" class="img-fluid" />
+            <div class="col-lg-5 col-xl-5 offset-1">
+              <!--img src="/img/placeholder1.png" alt="" class="img-fluid" /-->
+              <p class="text-white "data-mdb-toggle="animation"
+			      data-mdb-animation-start="onLoad"
+			      data-mdb-animation="fade-in"
+			      data-mdb-animation-delay="300">Please input your username.</p>
+              <div class="un-input-box mx-auto" data-mdb-toggle="animation"
+				      data-mdb-animation-start="onLoad"
+				      data-mdb-animation="fade-in"
+				      data-mdb-animation-delay="500">
+	              <h2 class="fs-1 text-gradient text-gradient-primary mb-0 text-left" style="font-weight: 900;">
+				  		<span class="typewrite" style="" data-period="2000" data-type='[ "ToxicUsername" ]'><span class="wrap"></span></span>
+				  </h2>
+              </div>
+              
+				  <p class="text-danger mt-2" data-mdb-toggle="animation"
+			      data-mdb-animation-start="onLoad"
+			      data-mdb-animation="fade-in"
+			      data-mdb-animation-delay="5000">This username violates our community standards.</p>
+
             </div>
           </div>
         </div>
@@ -169,7 +187,7 @@
 
       <hr class="my-5" />
       
-      <section id="see-it-in-action">
+      <section id="DEMO">
         <h3 class="text-center mb-5">See it in Action</h3>
 
 
@@ -192,7 +210,7 @@
 	    </div>
       </section>
       
-      <section>
+      <section class="hidden">
         <h3 class="text-center mb-5">See it in Action</h3>
 
 
@@ -235,7 +253,7 @@
 		  <div class="col-6 card p-4">
 		    <div class="d-flex justify-content-center">
 		      <div class="text-center" style="max-width: 700px">
-		      	<iframe class="embed-responsive-item" height="348px" width="600px;" frameborder="0" marginheight="1" marginwidth="1" name="cboxmain" id="cboxmain" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" title="Authenticate S4m" src="un_form.html" crossorigin="anonymous"></iframe>
+		      	<iframe class="embed-responsive-item" height="348px" width="600px;" frameborder="0" marginheight="1" marginwidth="1" name="cboxmain" id="cboxmain" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" title="" src="un_form.html" crossorigin="anonymous"></iframe>
 		        
 		      </div>
 		    </div>
@@ -250,7 +268,7 @@
 
 
       <!--Section: Design Block-->
-      <section id="our-approach">
+      <section id="UNM">
         <h3 class="text-center mb-5">Our Unique Approach</h3>
 
         <p class="mb-5 mx-auto w-responsive text-center">
@@ -309,7 +327,7 @@
             <hr class="my-5" />
 
       <!--Section: Design Block-->
-      <section id="sam">
+      <section id="CG">
 	      
         <h3 class="text-center mb-5">Samurai Cyber Guardian - The Proactive Response</h3>
 
@@ -674,9 +692,8 @@
       </section>
       <!--Section: Design Block-->
     </div>
-  </main>
 
-    <header>
+    <section id="AU">
       <div class="page-header min-vh-85">
         <div>
           <img
@@ -745,7 +762,6 @@
           </div>
         </div>
       </div>
-    </header>
     
   </section>
 
@@ -780,12 +796,72 @@
       }
     </script>  
      -->   
-    <!-- MDB -->
-        <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="/js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+         
+        <script type="text/javascript">
+        $(document).ready(() => {
+          new WOW().init();
+        });
+    </script> 
+    
+        <script type="text/javascript">
+				var TxtType = function(el, toRotate, period) {
+		        this.toRotate = toRotate;
+		        this.el = el;
+		        this.loopNum = 0;
+		        this.period = parseInt(period, 10) || 2000;
+		        this.txt = '';
+		        this.tick();
+		        this.isDeleting = false;
+		    };
+		
+		    TxtType.prototype.tick = function() {
+		        var i = this.loopNum % this.toRotate.length;
+		        var fullTxt = this.toRotate[i];
+		
+		        if (this.isDeleting) {
+		        this.txt = fullTxt.substring(0, this.txt.length - 1);
+		        } else {
+		        this.txt = fullTxt.substring(0, this.txt.length + 1);
+		        }
+		
+		        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+		
+		        var that = this;
+		        var delta = 200 - Math.random() * 100;
+		
+		        if (this.isDeleting) { delta /= 2; }
+		
+		        if (!this.isDeleting && this.txt === fullTxt) {
+		        delta = this.period;
+		        this.isDeleting = true;
+		        } else if (this.isDeleting && this.txt === '') {
+		        this.isDeleting = false;
+		        this.loopNum++;
+		        delta = 500;
+		        }
+		
+		        setTimeout(function() {
+		        that.tick();
+		        }, delta);
+		    };
+		
+		    window.onload = function() {
+		        var elements = document.getElementsByClassName('typewrite');
+		        for (var i=0; i<elements.length; i++) {
+		            var toRotate = elements[i].getAttribute('data-type');
+		            var period = elements[i].getAttribute('data-period');
+		            if (toRotate) {
+		              new TxtType(elements[i], JSON.parse(toRotate), period);
+		            }
+		        }
+		        // INJECT CSS
+		        var css = document.createElement("style");
+		        css.type = "text/css";
+		        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #333}";
+		        document.body.appendChild(css);
+		    };	
+				</script>
+
 
     <script type="text/javascript" src="/js/mdb.min.js"></script>
     <!-- Custom scripts -->

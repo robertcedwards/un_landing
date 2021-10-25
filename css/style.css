@@ -107,4 +107,46 @@
 	margin-right: 1rem;
 }
 
+.navbar-nav {
+	line-height: 1;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scroll .navbar-brand,
+.navbar-scroll .navbar-sub {
+  color: #fff;
+}
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scrolled .navbar-brand, 
+.navbar-scroll .navbar-sub {
+  color: #4f4f4f;
+}
+
+.navbar-nav .nav-item a.nav-link, .navbar-nav .nav-item a.nav-link, .navbar-nav .nav-item a.nav-link:active, .navbar-nav .nav-item a.nav-link:visited {
+	color:#fff;
+}
+
+.navbar-nav .nav-item a.nav-link:hover {
+	-webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    color: #9f9f9f;
+}
+
+.un-input-box {
+	height: 66px;
+	text-transform: uppercase;
+    vertical-align: bottom;
+    border: 0;
+    -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+    font-weight: 500;
+    padding: 0.625rem 1.5rem 0.5rem;
+    font-size: .75rem;
+    line-height: 1.5;
+    background-color: #fbfbfb;
+    border-radius: 0.25rem;
+}
+
 
