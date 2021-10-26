@@ -27,16 +27,71 @@
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8395826.js"></script>
 <!-- End of HubSpot Embed Code -->
-    
+        <style>
+
+        html,
+        body,
+        header,
+        .jarallax {
+          height: 700px;
+        }
+
+        @media (max-width: 740px) {
+          html,
+          body,
+          header,
+          .jarallax {
+            height: 100vh;
+          }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+          html,
+          body,
+          header,
+          .jarallax {
+            height: 100vh;
+          }
+        }
+
+        @media (min-width: 560px) and (max-width: 650px) {
+          header .jarallax h1 {
+            margin-bottom: 1.5rem !important;
+          }
+          header .jarallax h5 {
+            margin-bottom: 1.5rem !important;
+          }
+        }
+
+        .top-nav-collapse {
+            background-color: #3f51b5!important;
+        }
+        .navbar:not(.top-nav-collapse) {
+            background: transparent!important;
+        }
+        @media (max-width: 768px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #3f51b5!important;
+            }
+        }
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #3f51b5!important;
+            }
+        }
+        h5 {
+            letter-spacing: 3px;
+        }
+    </style>
     
 </head>
 <body>
-      <header>
+      <header id="header">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #000;">
+    <nav class="navbar navbar-expand-lg navbar-overlay navbar-inverse" style="">
       <div class="container">
 	    <div class="navbar-brand-wrapper">
-        	<div class="navbar-brand pt-0 pb-0" href="#!" style="line-height: .5; color:#fff;">Username Guardian</div>
+        	<div class="navbar-brand pt-2 pb-0" href="#!" style="line-height: .6; color:#fff;">Username Guardian</div>
         	<p class="navbar-brand-subhead mb-0">by Samurai</p>
 	    </div>
 	    
@@ -71,13 +126,13 @@
     <!-- Navbar -->
     <!-- Reference for mask https://mdbootstrap.com/snippets/Standard/mdbootstrap/3148161?action=fullscreen -->
    <section class="mb-10" style="background-color: rgba(245,245,245,1);">
-	<div class="bg-image" style="background-image: url('https://mdbootstrap.com/img/Photos/new-templates/landing-page/img7.jpg'); height: 740px;">
-      <div class="mask" style="background-color: rgba(0,0,0, 1);">
+	<div class="bg-image" style="background-image: url('https://mdbootstrap.com/img/Photos/new-templates/landing-page/img7.jpg'); height: 760px;">
+      <div class="mask" style="background-image: linear-gradient(310deg,#023591,#7c2eb2);">
         <div class="container text-white h-100" style="padding-top: 1rem; padding-bottom: 7rem; border-bottom: 1px solid #666; width: 100%;">
           <div class="row align-items-center justify-content-center h-100">
             <div class="col-lg-6 col-xl-6 mt-5">
               <!--h1 class="display-3 font-weight-bold mb-5" style="color: #7f00ee;"-->
-              <h1 class="display-4 font-weight-bold mb-5" style="">
+              <h1 class="display-4 font-weight-bold mb-4" style="">
                 Setting the Tone 
                 <span class="d-block">for Protecting Your Communities</span>
               </h1>
@@ -106,7 +161,7 @@
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
 				      data-mdb-animation-delay="500">
-	              <h2 class="fs-1 text-gradient text-gradient-primary mb-0 text-left" style="font-weight: 900;">
+	              <h2 class="fs-1 text-dark mb-0 text-left" style="font-weight: 900;">
 				  		<span class="typewrite" style="" data-period="2000" data-type='[ "ToxicUsername" ]'><span class="wrap"></span></span>
 				  </h2>
               </div>
@@ -126,7 +181,7 @@
         
 <main style="background-color: rgba(245,245,245,1);">
  <div class="container py-5">        
-    <div style="margin-top: -8rem;">
+    <div style="margin-top: -5rem;">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-xl-3 mb-4 ms-auto me-auto me-xl-0 d-flex align-self-stretch">
@@ -136,7 +191,7 @@
 	                <h5 class="pt-3">Prevent Disruption</h5>
 	             </div>
 					  <div class="card-body px-4">
-					    <p class="card-text">Empower your product to prevent disruptive behavior, proactively, at the first touchpoint, before a user enters your community. Users are now X% more likely to interact and engage in positive behavior.</p>
+					    <p class="card-text">Empower your product to prevent disruptive behavior, proactively, at the first touchpoint, before a user enters your community. Users are now 50% more likely to interact and engage in positive behavior.</p>
 					  </div>
 	              </div>
           	</div>
@@ -189,7 +244,7 @@
 
       
       <section id="DEMO">
-        <h3 class="text-center mb-5">See it in Action</h3>
+        <h3 class="text-center mb-5">Protect Your Communities</h3>
 
 
 	          
@@ -228,9 +283,7 @@
       <section id="UNM">
         <h3 class="text-center mb-5">Our Unique Approach</h3>
 
-        <p class="mb-5 mx-auto w-responsive text-center">
-          Samurai takes a neuro-symbolic approach to detect the hidden meanings in usernames. It identifies individual words within the username and generates as many variants as possible from the inside out. We use these techniques to find the original attempt at creating a disruptive username. This method allows us to categorize different types of subversive language within the user's online identity. 
-        </p>
+        <p class="mb-5 mx-auto w-responsive text-center">Samurai takes a neuro-symbolic approach to detect the hidden meanings in usernames. It identifies individual words within the username and generates as many variants as possible from the inside out. We use these techniques to find the original attempt at creating a disruptive username. This method allows us to categorize different types of subversive language within the user's online identity.</p>
         
         <div class="row align-items-center">
           <div class="col-lg-6" style="margin-top: -5.3rem;">
@@ -257,11 +310,10 @@
               </div>
               <div class="col-md-11 col-10">
                 <h5>Categories</h5>
-                <p> <b>Offensive</b> - DïçKHèâD - <i>Dickhead</i><br />
+                <p><b>Offensive</b> - DïçKHèâD - <i>Dickhead</i><br />
 					<b>Sexual</b> - <strikethru>Aneed Morehead - <i>I need more head</i></strikethru><br />
 					<b>Profanity</b> - FolyHuck - <i>Holy Fuck</i><br />
 					<b>Inappropriate</b> - Morph1n3 - <i>Morphine</i>
-
                 </p>
               </div>
             </div>
@@ -277,6 +329,14 @@
               </div>
             </div>
           </div>
+            
+	      
+        <h3 class="text-center mt-5">The Next Step in Trust and Safety</h3>
+        
+        <h4 class="text-center mt-2 mb-4">The Samurai Cyber Guardian</h4>
+
+        <p class="mb-5 mx-auto w-responsive text-center">
+          The first intelligence built for autonomous cyberviolence intervention, preventing the most disruptive and harmful behavior/communication. Samurai can read and respond to cyberviolence, understanding the context, reasoning, and intent behind nuanced forms of language. Samurai's Cyber Guardian decreased disruptive behavior by 45% in one of the most infamously toxic communities. Although this community was moderated, Samurai accomplished this feat without the use of moderators and a staggering 76% of cyberbullies who interacted with Samurai voluntarily changed their tone.</p>
         </div>
       </section>
       <!--Section: Design Block-->
@@ -286,10 +346,10 @@
       <!--Section: Design Block-->
       <section id="CG">
 	      
-        <h3 class="text-center mb-5">Samurai Cyber Guardian - The Proactive Response</h3>
+        <h3 class="text-center mb-5">The First Truly Proactive Response</h3>
 
-        <p class="mb-5 mx-auto w-responsive text-center">
-          The first intelligence built for autonomous cyberviolence intervention, preventing the most disruptive and harmful behavior/communication. Samurai can read and respond to cyberviolence, understanding the context, reasoning, and intent behind nuanced forms of language.</p>
+        <!--p class="mb-5 mx-auto w-responsive text-center">
+          The first intelligence built for autonomous cyberviolence intervention, preventing the most disruptive and harmful behavior/communication. Samurai can read and respond to cyberviolence, understanding the context, reasoning, and intent behind nuanced forms of language.</p-->
         
         <div class="row align-items-center" style="">
           <div class="col-lg-6">
@@ -420,9 +480,9 @@
           </div>
         </div>
         
-        <h3 class="text-center mb-5">Breaking the Turing Test</h3>
+        <!--h3 class="text-center mb-5">Breaking the Turing Test</h3>
           <p class="mb-5 mx-auto w-responsive text-center">Samurai broke the record for the turing test, not being identified as artificial intelligence by humans for 8 months. In that time, it decreased disruptive behavior by 45% without the use of moderators and a staggering 76% of cyberbullies who interacted with Samurai voluntarily changed their tone.
-        </p>
+        </p-->
       </section>
       
  
@@ -664,10 +724,7 @@
             <div class="col-lg-7 d-flex">
               <div class="card blur shadow-6">
                 <div class="card-body text-md-start text-center p-sm-5 mt-md-3">
-                  <h2
-                    class="fs-1 text-gradient text-gradient-primary mb-0"
-                    style="font-weight: 900;"
-                  >
+                  <h2 class="fs-1 text-gradient text-gradient-primary mb-0" style="font-weight: 900;">
                     About Us
                   </h2>
                   <h2 class="fs-1 text-dark mb-4" style="font-weight: 900;">Logos and stuff</h2>
@@ -781,6 +838,19 @@
 
     <!-- Copyright -->
   </footer>
+  
+
+
+<button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fas fa-arrow-up text-white"></i>
+</button>
+  
+<!--div id="btnTop" class="fixed-action-btn smooth-scroll" style="bottom: 24px; right: 24px;display: none;">
+  <a href="#header" class="btn-floating btn-large text-gradient text-gradient-primary" title="back to top">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+</div-->
+  
     <!-- 
     <script>
       document.querySelector("form").addEventListener("submit", handleSubmit);
@@ -863,6 +933,34 @@
 		        document.body.appendChild(css);
 		    };	
 				</script>
+				
+	<script type="text/javascript">
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+	</script>
 
 
     <script type="text/javascript" src="/js/mdb.min.js"></script>

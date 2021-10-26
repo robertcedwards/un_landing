@@ -105,10 +105,7 @@
 .navbar-brand-subhead {
 	text-align: right;
 	margin-right: 1rem;
-}
-
-.navbar-nav {
-	line-height: 1;
+	color: #9f9f9f;
 }
 
 .navbar-scroll .nav-link,
@@ -121,7 +118,7 @@
 .navbar-scroll .fa-bars,
 .navbar-scrolled .navbar-brand, 
 .navbar-scroll .navbar-sub {
-  color: #4f4f4f;
+  color: #9f9f9f;
 }
 
 .navbar-nav .nav-item a.nav-link, .navbar-nav .nav-item a.nav-link, .navbar-nav .nav-item a.nav-link:active, .navbar-nav .nav-item a.nav-link:visited {
@@ -149,4 +146,15 @@
     border-radius: 0.25rem;
 }
 
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-image: linear-gradient(310deg,#023591,#7c2eb2);
+}
 
+.navbar-overlay {
+    margin-bottom: -70px; 
+    z-index: 1; // 
+}
