@@ -263,7 +263,7 @@
 		    <div class="d-flex justify-content-center">
 		      <div class="text-center" style="max-width: 700px">
 		      	<!--<iframe class="embed-responsive-item" height="380px" width="620px;" frameborder="0" marginheight="1" marginwidth="1" name="cboxmain" id="cboxmain" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" title="" src="un_form.html" crossorigin="anonymous"></iframe> -->
-            <form name="recaptcha" id="un-api-request" action="/thank-you-iframe-un.html" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true"  data-netlify="true">
+            <form name="recaptcha" id="un-api-request"  method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true"  data-netlify="true">
 			        
               <!--p class="text-muted mb-4 text-center"> 
                </p-->   
@@ -924,11 +924,9 @@
   
     
         <script>
-          document.querySelector("form").addEventListener("submit", handleSubmit);
-
-          const handleSubmit = (e) => {
+            const handleSubmit = (e) => {
             e.preventDefault()
-            let myForm = document.getElementById('work-email');
+            let myForm = document.getElementById('recaptcha');
             let formData = new FormData(myForm)
             fetch('/', {
               method: 'POST',
