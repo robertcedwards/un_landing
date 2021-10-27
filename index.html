@@ -262,80 +262,8 @@
 		  <div class="col-6 card p-4">
 		    <div class="d-flex justify-content-center">
 		      <div class="text-center" style="max-width: 700px">
-		      	<!--<iframe class="embed-responsive-item" height="380px" width="620px;" frameborder="0" marginheight="1" marginwidth="1" name="cboxmain" id="cboxmain" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" title="" src="un_form.html" crossorigin="anonymous"></iframe> -->
-            <form name="recaptcha" id="un-api-request"  method="POST">
-			        
-              <!--p class="text-muted mb-4 text-center"> 
-               </p-->   
-   
-                     <div class="row">
-                       <div class="col-6 mb-4">
-                         <p class="text-muted mb-4 text-center">Select Demo API for access to a 1000/usernames per month</p>
-                   
-                       <div class="form-check form-check-inline mb-4">
-                 <input
-                   class="form-check-input"
-                   type="radio"
-                   name="inlineRadioOptions"
-                   id="inlineRadio1"
-                   value="demoapi"
-                 />
-                 <label class="form-check-label" for="inlineRadio1">Demo API (1k Requests/Month)</label>
-               </div>
-                         
-                   <!-- Name input -->
-                  <div class="form-outline">
-                     <input type="text" id="Field9" name="Field9" class="form-control" required/>
-                     <label class="form-label" for="Field9" id="title9">Name</label>
-                   </div>
-                       </div>
-                       
-                       <div class="col-6 mb-4">
-                          <p class="text-muted mb-4 text-center">Or select Custom Solution to get in touch for enterprise-level needs.</p>
-                         
-                         <div class="form-check form-check-inline mb-4">
-                 <input
-                   class="form-check-input"
-                   type="radio"
-                   name="inlineRadioOptions"
-                   id="inlineRadio2"
-                   value="custom_solution"
-                 />
-                 <label class="form-check-label" for="inlineRadio2">Custom Solution (Enterprise)</label>
-               </div>
-                         
-                   <!-- Email input -->
-                   <div class="form-outline">
-                     <input type="email" id="Field10" name="Field10" class="form-control" required/>
-                     <label class="form-label" for="Field10" id="title10">Work Email</label> 
-                   </div>
-                       </div>
-                     </div>
-                     
-                   <div class="row">
-                     
-                     <div class="col-6">
-                   <!-- Email input -->
-                   <div class="form-outline">
-                     <input type="text" id="Field12" name="Field12" class="form-control" required/>
-                     <label class="form-label" for="Field12" id="title12">Company</label>
-                   </div>
-                       </div>
-                       
-                   
-                   <div class="col-6">
-                 <!-- Submit button -->
-                     <input type="submit" id="saveForm" name="saveForm" type="submit" value="Submit" class="btn btn-dark btn-block mb-4"/>
-                   </div>
-             </div>
-             
-             
-                     <div class="row">
-                       <div class="input-group justify-content-center">
-                 <div data-netlify-recaptcha="true"></div>
-                       </div>
-                     </div>
-               </form>
+		      	<iframe class="embed-responsive-item" height="380px" width="620px;" frameborder="0" marginheight="1" marginwidth="1" name="cboxmain" id="cboxmain" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" title="" src="un_form.html" crossorigin="anonymous"></iframe>
+		        
 		      </div>
 		    </div>
 		  </div>
@@ -920,8 +848,30 @@
   </a>
 </div-->
   
-  
-     
+    <!-- 
+    <script>
+      document.querySelector("form").addEventListener("submit", handleSubmit);
+
+      const handleSubmit = (e) => {
+        e.preventDefault()
+        let myForm = document.getElementById('work-email');
+        let formData = new FormData(myForm)
+        fetch('/', {
+          method: 'POST',
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
+        }).then(() => console.log('Form successfully submitted')).catch((error) =>
+          alert(error))
+      }
+    </script>  
+     -->   
+         
+        <script type="text/javascript">
+        $(document).ready(() => {
+          new WOW().init();
+        });
+    </script> 
+    
         <script type="text/javascript">
 				var TxtType = function(el, toRotate, period) {
 		        this.toRotate = toRotate;
