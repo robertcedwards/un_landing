@@ -16,6 +16,7 @@
     
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1QCKKXBD5"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -159,7 +160,7 @@
 					      data-mdb-animation="fade-in"
 					      data-mdb-animation-delay="500">
 		              <h2 class="fs-1 text-dark mb-0 text-left" style="font-weight: 900;">
-					  		<span class="typewrite" style="" data-period="2000" data-type='[ "KcufsAcixoT" ]'><span class="wrap"></span></span>
+					  		<span><span id="app" class="wrap"></span></span>
 					  </h2>
 	              </div>
 	              
@@ -297,14 +298,15 @@
 		  
 		  
 		  <div class="col-lg-6 col-12 mt-lg-0 mt-5 d-flex  justify-content-center">
-			  
-			<iframe id="inlineFrameExample" 
+        <div id="app"></div>
+  
+			<!-- <iframe id="inlineFrameExample" 
 			    title="Inline Frame Example"
 			    width="600"
 			    height="290"
 			    src="/form.html">
 			</iframe>
-			
+    -->
 		  </div>
 	    </div>
 	    
@@ -356,7 +358,7 @@
                 <i class="fas fa-language fa-2x" style="color: #7c2eb2;"></i>
               </div>
               <div class="col-md-11 col-10">
-                <h5>Simple Ideas Require Complex SolutionS</h5>
+                <h5>Simple Ideas Require Complex Solutions</h5>
                 <p>
                   Filter or keyword-based methods are inefficient & inaccurate. Leet speak, numeric, and character workarounds require a nuanced understanding of composition, Samurai protects your communities from these resistances to adversarial attacks and more "creative" approaches.
                 </p>
@@ -941,8 +943,6 @@
 <footer style="background-color: #333;">
 	<div class="container">
 		<div class="row align-items-end">
-    <!-- Copyright -->
-    
 		    <div class="col-3 text-left text-white pt-3">
 			 <p class="pt-0 mt-0 mb-0 pb-0 text-muted">Samurai Labs</p>
 			 <p class="mb-0 pb-0 text-muted">548 Market Street <em>#90321</em></p>
@@ -957,10 +957,7 @@
 		      <p class="pt-0 mt-0 mb-0 pb-0 text-muted">Privacy Policy</p>
 		      <p class="pt-0 mt-0 mb-0 pb-0 text-muted">Contact Us</p>
 		    </div>
-    <!-- Copyright -->
 		</div>
-
-    <!-- Copyright -->
   </footer>
   
 
@@ -975,90 +972,29 @@
   </a>
 </div-->
   
-    <!-- 
-    <script>
-      document.querySelector("form").addEventListener("submit", handleSubmit);
 
-      const handleSubmit = (e) => {
-        e.preventDefault()
-        let myForm = document.getElementById('work-email');
-        let formData = new FormData(myForm)
-        fetch('/', {
-          method: 'POST',
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString()
-        }).then(() => console.log('Form successfully submitted')).catch((error) =>
-          alert(error))
-      }
-    </script>  
-     -->   
-         
-        <script type="text/javascript">
-        $(document).ready(() => {
-          new WOW().init();
+				<script>
+        var app = document.getElementById('app');
+
+        var typewriter = new Typewriter(app, {
+          loop: false,
+          delay: 75,
         });
-    </script> 
-    
-        <script type="text/javascript">
-				var TxtType = function(el, toRotate, period) {
-		        this.toRotate = toRotate;
-		        this.el = el;
-		        this.loopNum = 0;
-		        this.period = parseInt(period, 10) || 2000;
-		        this.txt = '';
-		        this.tick();
-		        this.isDeleting = false;
-		    };
-		
-		    TxtType.prototype.tick = function() {
-		        var i = this.loopNum % this.toRotate.length;
-		        var fullTxt = this.toRotate[i];
-		
-		        if (this.isDeleting) {
-		        this.txt = fullTxt.substring(0, this.txt.length - 1);
-		        } else {
-		        this.txt = fullTxt.substring(0, this.txt.length + 1);
-		        }
-		
-		        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-		
-		        var that = this;
-		        var delta = 200 - Math.random() * 100;
-		
-		        if (this.isDeleting) { delta /= 2; }
-		
-		        if (!this.isDeleting && this.txt === fullTxt) {
-		        delta = this.period;
-		        this.isDeleting = true;
-		        } else if (this.isDeleting && this.txt === '') {
-		        this.isDeleting = false;
-		        this.loopNum++;
-		        delta = 500;
-		        }
-		
-		        setTimeout(function() {
-		        that.tick();
-		        }, delta);
-		    };
-		
-		    window.onload = function() {
-		        var elements = document.getElementsByClassName('typewrite');
-		        for (var i=0; i<elements.length; i++) {
-		            var toRotate = elements[i].getAttribute('data-type');
-		            var period = elements[i].getAttribute('data-period');
-		            if (toRotate) {
-		              new TxtType(elements[i], JSON.parse(toRotate), period);
-		            }
-		        }
-		        // INJECT CSS
-		        var css = document.createElement("style");
-		        css.type = "text/css";
-		        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #333}";
-		        document.body.appendChild(css);
-		    };	
-				</script>
-				
-	<script type="text/javascript">
+        
+        typewriter
+          .pauseFor(2500)
+          .typeString('KcufsAcixoT')
+          .pauseFor(300)
+          .deleteChars(3)
+          .typeString('x07')
+          .deleteChars(3)
+          .typeString('><07')
+          .pauseFor(1000)
+          .start();
+      </script>        
+
+
+<script type="text/javascript">
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
