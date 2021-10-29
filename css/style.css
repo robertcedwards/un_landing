@@ -206,43 +206,43 @@ h3 {
 
 .annotate.no-harm {
 	color: #fff;
-    background-color: #39c0ed;
+    background-color: #999;
 }
 
 .annotate.profanity {
-	color: #fff;
-    background-color: #1266f1;
+	color: #333;
+    background-color: #fbd400;
 }
 
 .annotate.inappropriate {
     color: #fff;
-    background-color: #b23cfd;
+    background-color: #fb9e00;
 }
 
 .annotate.offensive {
 	color: #fff;
-    background-color: #ffa900;
+    background-color: #fe3f02;
 }
 
 .annotate.sexual {
 	color: #fff;
-    background-color: #f93154;
+    background-color: #fe0000;
 }
 
 .text-profanity {
-	color: #1266f1;
+	color: #fbd400;
 }
 
 .text-inappropriate {
-	color: #b23cfd;
+	color: #fb9e00;
 }
 
 .text-offensive {
-	color: #ffa900;
+	color: #fe3f02;
 }
 
 .text-sexual {
-	color: #f93154;
+	color: #fe0000;
 }
 
 
@@ -259,4 +259,62 @@ input[type=text]:-moz-placeholder { /* Firefox 18- */
 	color: #fff;
 }
 
+.form-label {
+	line-height: 1.5;
+}
+
+.form-control:focus {
+	border-color: #C2027B!important;
+    -webkit-box-shadow: inset 0 0 0 1px #C2027B!important;
+    box-shadow: inset 0 0 0 1px #C2027B!important;
+}
+
+.form-outline .form-control:focus~.form-label {
+	color: #C2027B!important;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-leading {
+	border-top: 0.125rem solid #C2027B;
+    border-bottom: 0.125rem solid #C2027B;
+    border-left: 0.125rem solid #C2027B;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-middle {
+	border-bottom: 0.125 rem solid;
+    border-color: #C2027B;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-trailing {
+	border-top: 0.125rem solid #C2027B;
+    border-bottom: 0.125rem solid #C2027B;
+    border-right: 0.125rem solid #C2027B;
+}
+
+.form-check-input:checked {
+    border-color: #C2027B;
+}
+
+.form-check-input:checked:focus {
+    -webkit-box-shadow: 0 0 0 0.25rem rgb(194 2 123 / 25%);
+    box-shadow: 0 0 0 0.25rem rgb(194 2 123 / 25%);
+    
+    border-color: #C2027B;
+}
+
+.form-check-input[type=radio]:checked:after {
+	border-color: #C2027B;
+    background-color: #C2027B;
+	
+}
+ 
+.form-check-input:checked:focus:before {
+	 -webkit-box-shadow: 0 0 0 13px #C2027B;
+    box-shadow: 0 0 0 13px #C2027B;
+}
+
+.Typewriter__wrapper {
+	position: relative;
+    top: 3px;
+}
+ 
 

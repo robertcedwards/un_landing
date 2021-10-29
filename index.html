@@ -159,7 +159,7 @@
 					      data-mdb-animation-start="onLoad"
 					      data-mdb-animation="fade-in"
 					      data-mdb-animation-delay="500">
-		              <h2 class="fs-1 text-dark mb-0 text-left" style="font-weight: 900;">
+		              <h2 class="fs-1 text-dark mb-0 text-left" style="font-weight: 900; line-height: 1;">
 					  		<span><span id="demo1" class="wrap"></span></span>
 					  </h2>
 	              </div>
@@ -186,13 +186,13 @@
 				      <p class="annotate-label mt-2" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="5700">Categories: <span class="annotate profanity" data-mdb-toggle="animation"
+				      data-mdb-animation-delay="5700">Categories: <span class="annotate inappropriate" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="5800">Profanity</span> <span class="annotate inappropriate" data-mdb-toggle="animation"
+				      data-mdb-animation-delay="5900">Inappropriate</span> <span class="annotate profanity" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="5900">Inappropriate</span></p>
+				      data-mdb-animation-delay="5800">Profanity</span></p>
 				      
 				      <p class="annotate-label mt-2" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
@@ -286,14 +286,12 @@
 	          
 
 	    <div class="row d-flex align-items-center justify-content-center py-3 mb-5">
-		  <div class="col-lg-6 col-12 card p-4" style="background-image: linear-gradient(310deg,#7c2eb2,#023591);">
-		    <div class="d-flex justify-content-center">
-		      <div class="text-center" style="max-width: 700px">
+			
+  <div class="col-lg-6 col-12 card p-4" style="background-image: linear-gradient(310deg,#7c2eb2,#023591);">
 		      	<iframe class="embed-responsive-item" height="380px" width="620px;" frameborder="0" marginheight="1" marginwidth="1" name="cboxmain" id="cboxmain" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" title="" src="un_form.html" crossorigin="anonymous"></iframe>
+  </div>
 		        
-		      </div>
-		    </div>
-		  </div>
+
 		  
 		  
 		  
@@ -307,7 +305,7 @@
 					      data-mdb-animation-start="onLoad"
 					      data-mdb-animation="fade-in"
 					      data-mdb-animation-delay="500">
-		              <h2 class="fs-1 text-dark mb-0 text-left" style="font-weight: 900;">
+		              <h2 class="fs-1 text-dark mb-0 text-left" style="font-weight: 900; line-height: 1;">
 					  		    <span><span id="demo2" class="wrap"></span></span>
                   </h2>
                 </div>
@@ -909,24 +907,32 @@ type: 'horizontalBar',
 data: {
 labels: ['Profanity','Inappropriate','Offensive','Sexual' ],
 datasets: [{
-label: '% Increase in Disrputive Behavior Based on Username',
-data: [0, 0, 0, 0],
+	label: '% Increase in Disrputive Behavior Based on Username',
+	Color: 'rgba(0,0,0,.0)',
+	data: [0, 0, 0, 0],
 backgroundColor: [
-'#1266f1',
-'#b23cfd',
-'#ffa900',
-'#f93154'
+'#fbd400',
+'#fb9e00',
+'#fe3f02',
+'#fe0000'
 ],
 borderColor: [
-'#1266f1',
-'#b23cfd',
-'#ffa900',
-'#f93154'
+'#fbd400',
+'#fb9e00',
+'#fe3f02',
+'#fe0000'
 ],
 borderWidth: 1
 }]
 },
 options: {
+    plugins: {
+        legend: {
+            display: false,
+	            }
+	          },
+	responsive: true,
+                
 scales: {
 xAxes: [{
 	tickColor: '#333',
@@ -938,7 +944,7 @@ xAxes: [{
 		zeroLineWidth: 1		
 	},
 ticks: {
-beginAtZero: true
+	beginAtZero: true
 }
 }],
 yAxes: [{

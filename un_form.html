@@ -30,12 +30,13 @@
 
 </head>
 <body style="background: transparent;" class="text-white">
-	
-	<h5 class="text-center mb-4">Protection Starts Here</h5>
+    <div class="d-flex justify-content-center">
+      <div class="text-center" style="max-width: 700px">	
+		  <h5 class="text-center mb-4">Protection Starts Here</h5>
 		        <!--p class="text-muted mb-4 text-center">
 		        </p-->
 		
-		        <form name="recaptcha" id="un-api-request" action="/thank-you-iframe-un.html" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true"  data-netlify="true">
+		        <form name="un_form" id="un-api-request" action="/thank-you-iframe-un.html" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true"  data-netlify="true">
 			        
 			     <!--p class="text-muted mb-4 text-center"> 
 		        </p-->   
@@ -97,7 +98,7 @@
                 
                 <div class="col-6">
 		          <!-- Submit button -->
-				          <button type="submit" id="saveForm" name="saveForm" type="submit" value="Submit" class="btn btn-dark btn-block mb-4" style="background-color: #C2027B;">    
+				          <button type="submit" id="saveForm" name="saveForm" type="submit" value="Submit" class="btn btn-dark btn-block mb-4" style="background-color: #C2027B; font-weight:600;">    
 				            Send
 				          </button>
 			          </div>
@@ -110,6 +111,9 @@
 		                </div>
 	                </div>
 		        </form>
+		      </div>
+		    </div>
+
     <script type="text/javascript" src="/js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="/js/script.js"></script>
