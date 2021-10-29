@@ -160,7 +160,7 @@
 					      data-mdb-animation="fade-in"
 					      data-mdb-animation-delay="500">
 		              <h2 class="fs-1 text-dark mb-0 text-left" style="font-weight: 900;">
-					  		<span><span id="app" class="wrap"></span></span>
+					  		<span><span id="demo1" class="wrap"></span></span>
 					  </h2>
 	              </div>
 	              
@@ -297,8 +297,32 @@
 		  
 		  
 		  
-		  <div class="col-lg-6 col-12 mt-lg-0 mt-5 d-flex  justify-content-center">
-        <div id="app"></div>
+		  <div class="col-lg-6 col-12 mt-lg-0 mt-5 d-flex justify-content-center">
+			   <div class="card p-4 text-left" style="background-color: #333;">
+	              <p class="text-white "data-mdb-toggle="animation"
+				      data-mdb-animation-start="onLoad"
+				      data-mdb-animation="fade-in"
+				      data-mdb-animation-delay="300">Please input your username.</p>
+	              <div class="un-input-box mx-auto text-left" style="width: 100%;" data-mdb-toggle="animation"
+					      data-mdb-animation-start="onLoad"
+					      data-mdb-animation="fade-in"
+					      data-mdb-animation-delay="500">
+		              <h2 class="fs-1 text-dark mb-0 text-left" style="font-weight: 900;">
+					  		<span><span id="demo2" class="wrap"></span></span>
+					  </h2>
+	              </div>
+	              
+					  <p class="text-danger mt-2" data-mdb-toggle="animation"
+				      data-mdb-animation-start="onLoad"
+				      data-mdb-animation="fade-in"
+				      data-mdb-animation-delay="5000">This username violates our community standards.</p>
+				      
+
+
+            </div>
+
+			  
+        <div id="demo2"></div>
   
 			<!-- <iframe id="inlineFrameExample" 
 			    title="Inline Frame Example"
@@ -974,7 +998,7 @@
   
 
 				<script>
-        var app = document.getElementById('app');
+        var app = document.getElementById('demo1');
 
         var typewriter = new Typewriter(app, {
           loop: false,
@@ -991,7 +1015,27 @@
           .typeString('><07')
           .pauseFor(1000)
           .start();
-      </script>        
+      </script>      
+      
+      <script>
+        var app = document.getElementById('demo2');
+
+        var typewriter = new Typewriter(app, {
+          loop: false,
+          delay: 75,
+        });
+        
+        typewriter
+          .pauseFor(2500)
+          .typeString('KcufsAcixoT')
+          .pauseFor(300)
+          .deleteChars(3)
+          .typeString('x07')
+          .deleteChars(3)
+          .typeString('><07')
+          .pauseFor(1000)
+          .start();
+      </script>    
 
 
 <script type="text/javascript">
