@@ -319,20 +319,20 @@
 
             </div>
             
-            <div class="card p-4 mt-4" style="background-color: #999;" data-mdb-toggle="animation"
-	              data-mdb-animation-start="onscroll"
-	              data-mdb-animation="fade-in"
+            <div class="json-data card p-4 mt-4" style="background-color: #999;" data-mdb-toggle="animation"
+	              data-mdb-animation-start="onLoad"
+	              data-mdb-animation="fade-in-up"
 	              data-mdb-animation-delay="900">
 	            <h5 class="text-white" data-mdb-toggle="animation"
-	              data-mdb-animation-start="onscroll"
+	              data-mdb-animation-start="onLoad"
 	              data-mdb-animation="fade-in"
 	              data-mdb-animation-delay="900">Guardian Output:</h5>
 	            <span class="text-white" data-mdb-toggle="animation"
-	              data-mdb-animation-start="onscroll"
+	              data-mdb-animation-start="onLoad"
                 data-mdb-animation-show-on-load="false"
 	              data-mdb-animation="fade-in"
 	              data-mdb-animation-delay="1300">
-	              <samp>{"username": "KcufsAcixoT", "result": {"toxic": 1, "exact": 1, "details": {"toxic as fuck": [["profanity", "fuck"]]}}}%   </samp>
+	              <samp>{"username": "Eric Shawn", "result": {"toxic": 1, "exact": 1, "details": {"erection": [["sexual", "erection"]]}}}</samp>
 	            </span>
             </div>
   
@@ -823,7 +823,22 @@
   </a>
 </div-->
   
+<script>
+  function showJSON(){
+    var elems = document.getElementsByClassName('json-data');
+for (var i=0;i<elems.length;i+=1){
+  elems[i].style.display = 'block';
+}
 
+  }
+  function hideJSON(){
+    var elems = document.getElementsByClassName('json-data');
+for (var i=0;i<elems.length;i+=1){
+  elems[i].style.display = 'none';
+}
+
+  }
+</script>
 <script>
   var app = document.getElementById('demo1');
 
@@ -849,18 +864,33 @@
   var app = document.getElementById('demo2');
 
   var typewriter = new Typewriter(app, {
-    loop: true,
+    
+    loop: false,
     delay: 75,
   });
   
   typewriter
-    .pauseFor(2500)
-    .typeString('KcufsAcixoT')
+    .callFunction(()=> hideJSON())    
     .pauseFor(300)
-    .deleteChars(3)
-    .typeString('x07')
-    .deleteChars(3)
-    .typeString('><07')
+    .typeString('Eric Shawn')
+    .callFunction(()=> showJSON())
+    .pauseFor(1000)
+    .deleteChars(10)
+    .callFunction(()=> hideJSON())    
+    .typeString('Er1c 5h4Wn')
+    .callFunction(()=> showJSON())    
+    .pauseFor(1000)
+    .deleteChars(5)
+    .callFunction(()=> hideJSON())    
+    .pauseFor(1000)
+    .typeString('5}{4Vv|\|')
+    .callFunction(()=> showJSON())    
+    .pauseFor(1000)
+    .deleteChars(8)
+    .callFunction(()=> hideJSON())    
+    .pauseFor(1000)
+    .typeString('5|-|A\|/|\ ')
+    .callFunction(()=> showJSON())     
     .pauseFor(1000)
     .start();
 </script>    
