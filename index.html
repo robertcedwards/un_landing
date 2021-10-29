@@ -124,13 +124,13 @@
     <!-- Navbar -->
     <!-- Reference for mask https://mdbootstrap.com/snippets/Standard/mdbootstrap/3148161?action=fullscreen -->
    <section class="mb-10" style="background-color: rgba(245,245,245,1);">
-	<div class="bg-image" style="background-image: url('https://mdbootstrap.com/img/Photos/new-templates/landing-page/img7.jpg'); height: 760px;">
+	<div class="bg-image" style="background-image: url('https://mdbootstrap.com/img/Photos/new-templates/landing-page/img7.jpg'); height: 840px;">
       <div class="mask" style="background-image: linear-gradient(310deg,#023591,#7c2eb2);">
         <div class="container text-white h-100" style="padding-top: 1rem; padding-bottom: 7rem; border-bottom: 1px solid #666; width: 100%;">
           <div class="row align-items-center justify-content-center h-100">
-            <div class="col-lg-6 col-xl-6 mt-5">
+            <div class="col-lg-6 col-xl-6 mt-5 pt-3">
               <!--h1 class="display-3 font-weight-bold mb-5" style="color: #7f00ee;"-->
-              <h1 class="display-4 font-weight-bold mb-4" style="">
+              <h1 class="display-4 font-weight-bold mb-5" style="">
                 Setting the Tone 
                 <span class="d-block">for Protecting Your Communities</span>
               </h1>
@@ -217,7 +217,7 @@
         
 <main style="background-color: rgba(245,245,245,1);">
  <div class="container py-5">        
-    <div style="margin-top: -5rem;">
+    <div style="margin-top: -1rem;">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-xl-3 mb-4 ms-auto me-auto me-xl-0 d-flex align-self-stretch">
@@ -341,13 +341,14 @@
 
       <!--Section: Design Block-->
       <section id="UNM">
-        <h3 class="text-center mb-5">Our Unique Approach</h3>
+        <h3 class="text-center mb-4">Our Unique Approach</h3>
 
         <p class="mb-5 mx-auto w-responsive text-center">Samurai takes a neuro-symbolic approach to detect hidden meanings in usernames. Identifying individual words within the username and generating as many variants as possible. We use these techniques to find the original attempt at creating a disruptive username. This method allows us to categorize different types of subversive language in a user's online identity.</p>
         
         <div class="row align-items-center">
           <div class="col-lg-6" style="margin-top: -5.3rem;">
-            <img src="/img/placeholder2.png" class="img-fluid" alt="smaple image" />
+	          <canvas id="barChart" class="mb-5" style="height: 300px;"></canvas>
+			  <p class="text-left pb-0 mb-0 text-center" style="font-size: .75rem; color: #bbb;">*Annotations.</p>
           </div>
           <div class="col-lg-6">
             <div class="row mb-4">
@@ -370,10 +371,10 @@
               </div>
               <div class="col-md-11 col-10">
                 <h5>Categories</h5>
-					<b style="font-weight: 600;">Profanity</b> - FolyHuck - <i>Holy Fuck</i><br />
-                <p><b style="font-weight: 600;">Offensive</b> - DïçKHèâD - <i>Dickhead</i><br />
-					<b style="font-weight: 600;">Inappropriate</b> - Morph1n3 - <i>Morphine</i><br />
-					<b style="font-weight: 600;">Sexual</b> - <strikethru>Aneed Morehead - <i>I need more head</i></strikethru>
+				<p><b class="text-profanity" style="font-weight: 600;">Profanity</b> - FolyHuck - <i>Holy Fuck</i><br />
+					<b class="text-inappropriate" style="font-weight: 600;">Inappropriate</b> - Morph1n3 - <i>Morphine</i><br />
+					<b class="text-offensive" style="font-weight: 600;">Offensive</b> - DïçKHèâD - <i>Dickhead</i><br />
+					<b class="text-sexual" style="font-weight: 600;">Sexual</b> - <strikethru>Aneed Morehead - <i>I need more head</i></strikethru>
                 </p>
               </div>
             </div>
@@ -1070,6 +1071,88 @@ function backToTop() {
     <script type="text/javascript" src="/js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="/js/script.js"></script>
+    <script>
+	//bar
+Chart.defaults.global.defaultFontColor = '#333';
+var ctxB = document.getElementById("barChart").getContext('2d');
+var myBarChart = new Chart(ctxB, {
+type: 'horizontalBar',
+data: {
+labels: ['Profanity','Inappropriate','Offensive','Sexual' ],
+datasets: [{
+label: 'Increase in Disrputive Behavior Based on Username',
+data: [0, 0, 0, 0],
+backgroundColor: [
+'#1266f1',
+'#b23cfd',
+'#ffa900',
+'#f93154'
+],
+borderColor: [
+'#1266f1',
+'#b23cfd',
+'#ffa900',
+'#f93154'
+],
+borderWidth: 1
+}]
+},
+options: {
+scales: {
+xAxes: [{
+	tickColor: '#333',
+	gridLines: {
+		color:'#333',
+		display: true,
+		drawBorder: true,
+		zeroLineColor: "#333",
+		zeroLineWidth: 1		
+	},
+ticks: {
+beginAtZero: true
+}
+}],
+yAxes: [{
+	gridLines: {
+	color: "transparent",
+	display: true,
+	drawBorder: false,
+	zeroLineColor: "#ffffff",
+	zeroLineWidth: 1
+	},
+ticks: {
+},
+},
+],
+
+}
+}
+});
+
+// ----- intersection observer will run animation once it enters the viewport ---------
+
+const options = {
+  rootMargin: '0px',
+  threshold: 0.5
+}
+
+const intersectionCallback = (entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      myBarChart.data.datasets[0].data = [50, 100, 150, 250]
+
+      myBarChart.update();
+      observer.disconnect();
+    }
+  });
+}
+
+const observer = new IntersectionObserver(intersectionCallback, options);
+
+const target = document.getElementById('barChart');
+observer.observe(target);
+</script>
+
 </body>
 </html>
 

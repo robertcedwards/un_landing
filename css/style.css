@@ -1,6 +1,6 @@
 body {
 	font-family: "open sans", sans-serif;
-	line-height: normal;
+	line-height: 1.75;
 }
 
 
@@ -228,4 +228,23 @@ h3 {
 	color: #fff;
     background-color: #f93154;
 }
+
+.text-profanity {
+	color: #1266f1;
+}
+
+.text-inappropriate {
+	color: #b23cfd;
+}
+
+.text-offensive {
+	color: #ffa900;
+}
+
+.text-sexual {
+	color: #f93154;
+}
+
+
+
 
