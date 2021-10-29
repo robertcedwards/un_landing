@@ -246,5 +246,17 @@ h3 {
 }
 
 
+input[type=text]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #fff;
+}
+input[type=text]::-moz-placeholder { /* Firefox 19+ */
+	color: #fff;
+}
+input[type=text]:-ms-input-placeholder { /* IE 10+ */
+	color: #fff;
+}
+input[type=text]:-moz-placeholder { /* Firefox 18- */
+	color: #fff;
+}
 
 
