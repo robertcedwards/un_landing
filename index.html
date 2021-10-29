@@ -165,7 +165,7 @@
 	              </div>
 	              
 					  <p class="text-danger mt-2" data-mdb-toggle="animation"
-				      data-mdb-animation-start="onLoad"
+				      data-mdb-animation-start="manual"
 				      data-mdb-animation="fade-in"
 				      data-mdb-animation-delay="5000">This username violates our community standards.</p>
 				      
@@ -320,15 +320,16 @@
             </div>
             
             <div class="card p-4 mt-4" style="background-color: #999;" data-mdb-toggle="animation"
-	              data-mdb-animation-start="onLoad"
+	              data-mdb-animation-start="onscroll"
 	              data-mdb-animation="fade-in"
 	              data-mdb-animation-delay="900">
 	            <h5 class="text-white" data-mdb-toggle="animation"
-	              data-mdb-animation-start="onLoad"
+	              data-mdb-animation-start="onscroll"
 	              data-mdb-animation="fade-in"
 	              data-mdb-animation-delay="900">Guardian Output:</h5>
 	            <span class="text-white" data-mdb-toggle="animation"
-	              data-mdb-animation-start="onLoad"
+	              data-mdb-animation-start="onscroll"
+                data-mdb-animation-show-on-load="false"
 	              data-mdb-animation="fade-in"
 	              data-mdb-animation-delay="1300">
 	              <samp>{"username": "KcufsAcixoT", "result": {"toxic": 1, "exact": 1, "details": {"toxic as fuck": [["profanity", "fuck"]]}}}%   </samp>
@@ -358,6 +359,7 @@
         
         <div class="row align-items-center">
           <div class="col-lg-6" style="margin-top: -5.3rem;">
+            <h5 class="text-center">% Increase in Disrputive Behavior Based on Username</h5>
 	          <canvas id="barChart" class="" style="height: 500px;"></canvas>
 			  <p class="text-left pb-0 mb-0 text-center" style="font-size: .75rem; color: #bbb;">*Annotations.</p>
           </div>
@@ -402,7 +404,8 @@
             </div>
           </div>
             
-	      
+          <hr class="my-5" />
+
         <h3 class="text-center mt-5">The Next Step in Trust and Safety</h3>
         
         <h4 class="text-center mt-2 mb-4">The Samurai Cyber Guardian</h4>
@@ -411,11 +414,7 @@
           The first intelligence built for autonomous cyberviolence intervention, preventing the most disruptive and harmful behavior/communication. Samurai can read and respond to cyberviolence, understanding the context, reasoning, and intent behind nuanced forms of language. Samurai's Cyber Guardian decreased disruptive behavior by 45% in one of the most infamously toxic communities. Although this community was moderated, Samurai accomplished this feat without the use of moderators and a staggering 76% of cyberbullies who interacted with Samurai voluntarily changed their tone.</p>
         </div>
       </section>
-      <!--Section: Design Block-->
-      
-            <hr class="my-5" />
 
-      <!--Section: Design Block-->
       <section id="CG">
 	      
         <h3 class="text-center mb-5">The First Truly Proactive Response</h3>
@@ -901,6 +900,8 @@ function backToTop() {
     <script>
 	//bar
 Chart.defaults.global.defaultFontColor = '#333';
+Chart.defaults.global.legend= false;
+
 var ctxB = document.getElementById("barChart").getContext('2d');
 var myBarChart = new Chart(ctxB, {
 type: 'horizontalBar',
@@ -927,8 +928,9 @@ borderWidth: 1
 },
 options: {
     plugins: {
-        legend: {
-            display: false,
+        title: {
+            display: true,
+            text: '% Increase in Disrputive Behavior Based on Username',
 	            }
 	          },
 	responsive: true,
