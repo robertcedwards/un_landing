@@ -296,56 +296,53 @@
 		  
 		  
 		  <div class="col-lg-6 col-12 mt-lg-0 mt-5 justify-content-center">
-			   <div class="card p-4 text-left" style="background-color: #333;">
-	              <p class="text-white "data-mdb-toggle="animation"
+			   <div class="card p-4 text-left relative-absolute top-0" style="background-color: #333;">
+	            <p class="text-white "data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="300">Please input your username.</p>
-	              <div class="un-input-box mx-auto text-left" style="width: 100%;" data-mdb-toggle="animation"
-					      data-mdb-animation-start="onLoad"
-					      data-mdb-animation="fade-in"
-					      data-mdb-animation-delay="500">
-		              <h2 class="fs-1 text-dark mb-0 text-left" style="font-weight: 900; line-height: 1;">
-					  		    <span><span id="demo2" class="wrap"></span></span>
-                  </h2>
-                </div>
+				      data-mdb-animation-delay="300">Please input your username.
+              </p>
+              <div class="un-input-box mx-auto text-left" style="width: 100%;" data-mdb-toggle="animation"
+              data-mdb-animation-start="onLoad"
+              data-mdb-animation="fade-in"
+              data-mdb-animation-delay="500">
+              <h2 class="fs-1 text-dark mb-0 text-left" style="font-weight: 900; line-height: 1;">
+                <span><span id="demo2" class="wrap"></span></span>
+              </h2>
+              </div>
 
-					  <p class="text-danger mt-2" data-mdb-toggle="animation"
+					  <p class="text-danger mt-2 json-results" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
-				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="700">This username violates our community standards.</p> 
+				      data-mdb-animation="fade-in">
+              This username violates our community standards.
+            </p> 
 				      
+              <div class="json-results card p-4 mt-4" style="background-color: #999;" data-mdb-toggle="animation"
+              data-mdb-animation-start="onLoad"
+              data-mdb-animation="fade-in">
+            <h5 class="text-white" data-mdb-toggle="animation"
+              data-mdb-animation-start="onLoad"
+              data-mdb-animation="fade-in">
+              Guardian Output:
+            </h5>
+            <span class="text-white" data-mdb-toggle="animation"
+              data-mdb-animation-start="onLoad"
+              data-mdb-animation-show-on-load="false"
+              data-mdb-animation="fade-in">
+              <samp>{"username": "Eric Shawn", "result": {"toxic": 1, "exact": 1, "details": {"erection": [["sexual", "erection"]]}}}</samp>
+            </span>
+          </div>
 
-
-            </div>
-            
-            <div class="json-data card p-4 mt-4" style="background-color: #999;" data-mdb-toggle="animation"
-	              data-mdb-animation-start="onLoad"
-	              data-mdb-animation="fade-in-up"
-	              data-mdb-animation-delay="900">
-	            <h5 class="text-white" data-mdb-toggle="animation"
-	              data-mdb-animation-start="onLoad"
-	              data-mdb-animation="fade-in"
-	              data-mdb-animation-delay="900">Guardian Output:</h5>
-	            <span class="text-white" data-mdb-toggle="animation"
-	              data-mdb-animation-start="onLoad"
-                data-mdb-animation-show-on-load="false"
-	              data-mdb-animation="fade-in"
-	              data-mdb-animation-delay="1300">
-	              <samp>{"username": "Eric Shawn", "result": {"toxic": 1, "exact": 1, "details": {"erection": [["sexual", "erection"]]}}}</samp>
-	            </span>
-            </div>
-  
-			<!-- <iframe id="inlineFrameExample" 
-			    title="Inline Frame Example"
-			    width="600"
-			    height="290"
-			    src="/form.html">
-			</iframe>
-    -->
+      </div>                        
+                            <!-- <iframe id="inlineFrameExample" 
+                                title="Inline Frame Example"
+                                width="600"
+                                height="290"
+                                src="/form.html">
+                            </iframe>
+                            -->
 		  </div>
 	    </div>
-	    
       </section>
 
       <hr class="my-5" />
@@ -825,14 +822,14 @@
   
 <script>
   function showJSON(){
-    var elems = document.getElementsByClassName('json-data');
+    var elems = document.getElementsByClassName('json-results');
 for (var i=0;i<elems.length;i+=1){
   elems[i].style.display = 'block';
 }
 
   }
   function hideJSON(){
-    var elems = document.getElementsByClassName('json-data');
+    var elems = document.getElementsByClassName('json-results');
 for (var i=0;i<elems.length;i+=1){
   elems[i].style.display = 'none';
 }
@@ -889,9 +886,13 @@ for (var i=0;i<elems.length;i+=1){
     .deleteChars(8)
     .callFunction(()=> hideJSON())    
     .pauseFor(1000)
-    .typeString('5|-|A\|/|\ ')
-    .callFunction(()=> showJSON())     
+    .typeString('5|-|A\|/|\| ')
+    .callFunction(()=> showJSON())
     .pauseFor(1000)
+    .deleteChars(17)
+    .callFunction(()=> hideJSON())    
+    .typeString('E.-1C 5|-|4\/\/|\|')
+    .callFunction(()=> showJSON())
     .start();
 </script>    
 
@@ -901,26 +902,26 @@ for (var i=0;i<elems.length;i+=1){
   let mybutton = document.getElementById("btn-back-to-top");
 
   // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    scrollFunction();
+  window.onscroll = function() {
+      scrollFunction();
   };
 
   function scrollFunction() {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
+      if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+      ) {
+          mybutton.style.display = "block";
+      } else {
+          mybutton.style.display = "none";
+      }
   }
   // When the user clicks on the button, scroll to the top of the document
   mybutton.addEventListener("click", backToTop);
 
   function backToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
   }
 </script>
 
@@ -929,89 +930,86 @@ for (var i=0;i<elems.length;i+=1){
 <!-- Custom scripts -->
 <script type="text/javascript" src="/js/script.js"></script>
 <script>
+Chart.defaults.global.defaultFontColor = '#333';
+Chart.defaults.global.legend = false;
 
-  Chart.defaults.global.defaultFontColor = '#333';
-  Chart.defaults.global.legend= false;
+var ctxB = document.getElementById("barChart").getContext('2d');
+var myBarChart = new Chart(ctxB, {
+    type: 'horizontalBar',
+    data: {
+        labels: ['Profanity', 'Inappropriate', 'Offensive', 'Sexual'],
+        datasets: [{
+            label: '% Increase in Disrputive Behavior Based on Username',
+            Color: 'rgba(0,0,0,.0)',
+            data: [0, 0, 0, 0],
+            backgroundColor: [
+                '#fbd400',
+                '#fb9e00',
+                '#fe3f02',
+                '#fe0000'
+            ],
+            borderColor: [
+                '#fbd400',
+                '#fb9e00',
+                '#fe3f02',
+                '#fe0000'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        plugins: {
+            title: {
+                display: true,
+                text: '% Increase in Disrputive Behavior Based on Username',
+            }
+        },
+        responsive: true,
 
-  var ctxB = document.getElementById("barChart").getContext('2d');
-  var myBarChart = new Chart(ctxB, {
-  type: 'horizontalBar',
-  data: {
-  labels: ['Profanity','Inappropriate','Offensive','Sexual' ],
-  datasets: [{
-    label: '% Increase in Disrputive Behavior Based on Username',
-    Color: 'rgba(0,0,0,.0)',
-    data: [0, 0, 0, 0],
-  backgroundColor: [
-  '#fbd400',
-  '#fb9e00',
-  '#fe3f02',
-  '#fe0000'
-  ],
-  borderColor: [
-  '#fbd400',
-  '#fb9e00',
-  '#fe3f02',
-  '#fe0000'
-  ],
-  borderWidth: 1
-  }]
-  },
-  options: {
-      plugins: {
-          title: {
-              display: true,
-              text: '% Increase in Disrputive Behavior Based on Username',
+        scales: {
+            xAxes: [{
+                tickColor: '#333',
+                gridLines: {
+                    color: '#333',
+                    display: true,
+                    drawBorder: true,
+                    zeroLineColor: "#333",
+                    zeroLineWidth: 1
+                },
+                ticks: {
+                    beginAtZero: true
                 }
-              },
-    responsive: true,
-                  
-  scales: {
-  xAxes: [{
-    tickColor: '#333',
-    gridLines: {
-      color:'#333',
-      display: true,
-      drawBorder: true,
-      zeroLineColor: "#333",
-      zeroLineWidth: 1		
-    },
-  ticks: {
-    beginAtZero: true
-  }
-  }],
-  yAxes: [{
-    gridLines: {
-    color: "transparent",
-    display: true,
-    drawBorder: false,
-    zeroLineColor: "#ffffff",
-    zeroLineWidth: 1
-    },
-  ticks: {
-  },
-  },
-  ],
+            }],
+            yAxes: [{
+                gridLines: {
+                    color: "transparent",
+                    display: true,
+                    drawBorder: false,
+                    zeroLineColor: "#ffffff",
+                    zeroLineWidth: 1
+                },
+                ticks: {},
+            }, ],
 
-  }
-  }
-  });
+        }
+    }
+});
 
-  const options = {
+const options = {
     rootMargin: '0px',
     threshold: 0.5
-  }
+}
 
-  const intersectionCallback = (entries) => {
+const intersectionCallback = (entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        myBarChart.data.datasets[0].data = [50, 100, 150, 250]
+        if (entry.isIntersecting) {
+            myBarChart.data.datasets[0].data = [50, 100, 150, 250]
 
-        myBarChart.update();
-        observer.disconnect();
-      }
+            myBarChart.update();
+            observer.disconnect();
+        }
     });
-  }
+}
 
   const observer = new IntersectionObserver(intersectionCallback, options);
   const target = document.getElementById('barChart');
