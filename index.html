@@ -321,9 +321,9 @@
       
       
 				      
-            <div class="json-results easing-2 card p-4 mt-4" style="background-color: #999; max-height: 167px;" data-mdb-toggle="animation"
+            <div id="json-results" class="json-results easing-2 card p-4 mt-4" style="background-color: #999; max-height: 167px;" data-mdb-toggle="animation"
               data-mdb-animation-start="onLoad"
-              data-mdb-animation="slide-in-right">
+              data-mdb-animation="fade-in-right">
 	            <h5 class="text-white" data-mdb-toggle="animation"
 	              data-mdb-animation-start="onLoad"
 	              data-mdb-animation="fade-in">
@@ -827,6 +827,7 @@
     var elems = document.getElementsByClassName('json-results');
 for (var i=0;i<elems.length;i+=1){
   elems[i].style.display = 'block';
+  //elems[i].data-mdb-animation.remove('fade-in-right');
 }
 
   }
@@ -834,6 +835,8 @@ for (var i=0;i<elems.length;i+=1){
     var elems = document.getElementsByClassName('json-results');
 for (var i=0;i<elems.length;i+=1){
   elems[i].style.display = 'none';
+  //elems[i].data-mdb-animation.add('fade-out-right');
+
 }
 
   }
