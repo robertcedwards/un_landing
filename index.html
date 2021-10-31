@@ -464,8 +464,34 @@
 	         <h5 class="text-center">Blackmail Detection Example:</h5> 
             <p class="text-center text-muted"><em> Send me more nudes or I'll publish the ones I already have</em></p>
             <p class="text-center text-muted mb-0"><span class="annotate-bmd bmd-pink">Send</span> <span class="annotate-bmd bmd-blue">me</span> <span class="annotate-bmd bmd-dpurple">more nudes</span> <span class="annotate-bmd bmd-grey">or</span> <span class="annotate-bmd bmd-purple">I</span> <span class="annotate-bmd bmd-pink">'ll publish</span> <span class="annotate-bmd bmd-dpurple">the ones</span> <span class="annotate-bmd bmd-purple">I</span> <span class="annotate-bmd bmd-blue">already</span> <span class="annotate-bmd bmd-pink">have</span></p>
-            <img src="/img/bmd_01.png" style="position: relative; left: 8px;"/>
+            <img src="/img/bmd_01.png" style="position: relative; left: 20px;"/>
             <img src="/img/bmd_02.png" style="position: relative; left: 24px;" />
+            <div class="table-responsive mt-4">
+				<table class="table table-bordered border-purp" style="color: #333; font-size: 16px;">
+					<thead>
+						<th>Samurai Cyber Guardian Detection</th>
+						<th align="center" class="text-center">Violence Level</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<b>Blackmail</b> threat to reveal information
+							</td>
+							<td align="center">
+								<span class="text-danger"><b>HIGH</b></span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b>Sexual harassment</b> attempt to solicit intimate photographs
+							</td>
+							<td align="center">
+								<span class="text-danger"><b>HIGH</b></span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
             
           </div>
         </div>
@@ -473,7 +499,56 @@
       
       <div class="row align-items-center">
           <div class="col-lg-6" style="">
-            <img src="/img/placeholder2.png" class="img-fluid" alt="smaple image" />
+	           <section class="chatbox">
+				    <section class="chat-window">
+				      <article class="msg-container msg-remote" id="msg-0">
+				        <div class="msg-box">
+				          <img class="user-img" id="user-0" src="//gravatar.com/avatar/00034587632094500000000000000000?d=retro" />
+				          <div class="flr">
+				            <div class="messages">
+				              <p class="msg" id="msg-0">
+				                Girls like you like it rough
+				              </p>
+				            </div>
+				            <span class="timestamp"><span class="username">Username</span></span>
+				          </div>
+				        </div>
+				      </article>
+				      <article class="msg-container msg-self" id="msg-0">
+				        <div class="msg-box">
+				          <div class="flr">
+				            <div class="messages">
+				              <p class="msg" id="msg-1">
+				                Hi friend, sorry to interrupt but it appears your message may violate our community standards as it seems highly sexual in nature and might be considered offensive or threatening.
+					            Would you care to <a href="#" class="chat-link">revise</a> your message, <a href="#" class="chat-link">cancel</a>, or do you prefer to <a href="#" class="chat-link">send</a> it anyway?
+				              </p>
+				            </div>
+				            <span class="timestamp"><span class="username">Samurai Cyber Guardian</span></span>
+				          </div>
+				          <img class="user-img" id="user-0" src="/img/s4m.png" />
+				        </div>
+				      </article>
+				      <article class="msg-container msg-self" id="msg-0">
+				        <div class="msg-box">
+				          <div class="flr">
+				            <div class="messages">
+				              <p class="msg" id="msg-1">
+				                Lorem ipsum dolor sit amet
+				              </p>
+				            </div>
+				            <span class="timestamp"><span class="username">Samurai Cyber Guardian</span></span>
+				          </div>
+				          <img class="user-img" id="user-0" src="/img/s4m.png" />
+				        </div>
+				      </article>
+				    </section>
+				    <form class="chat-input" onsubmit="return false;">
+				      <input type="text" autocomplete="on" placeholder="" />
+				      <button disabled>
+				      <svg style="width:24px;height:24px; margin-bottom: 3px;" viewBox="0 0 24 24"><path fill="rgba(0,0,0,.38)" d="M17,12L12,17V14H8V10H12V7L17,12M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z" /></svg>
+				       </button>
+				    </form>
+				  </section>
           </div>
           <div class="col-lg-6">
             <div class="row mb-4">
@@ -1041,6 +1116,17 @@ const intersectionCallback = (entries) => {
   const target = document.getElementById('barChart');
   observer.observe(target);
 </script>
+
+<script> // Chatbox Script
+	$('.chat-input input').keyup(function(e) {
+  if ($(this).val() == '')
+    $(this).removeAttr('good');
+  else
+    $(this).attr('good', '');
+});
+</script>
+
+Resources
 
 </body>
 </html>
