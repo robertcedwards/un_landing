@@ -448,7 +448,7 @@
                 </p>
               </div>
             </div>
-            <div class="row">
+            <div class="row mb-5">
               <div class="col-md-1 col-2">
                 <i class="fas fa-biohazard fa-2x" style="color: #7c2eb2;"></i>
               </div>
@@ -498,7 +498,7 @@
       </section>
       
       <div class="row align-items-center">
-          <div class="col-lg-6" style="">
+          <div class="col-lg-6 mb-5" style="">
 	           <section class="chatbox">
 				    <section class="chat-window">
 				      <article class="msg-container msg-remote" id="msg-0">
@@ -644,7 +644,22 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <img src="/img/placeholder3.png" class="img-fluid" alt="smaple image" />
+	        <div class="row p-0 mb-5">  
+	          <div class="col-6 p-0">
+		          <canvas id="doughnut-chart1"></canvas>
+	          </div>
+	          <div class="col-6 p-0">
+		          <canvas id="doughnut-chart2"></canvas>
+		      </div>
+	        </div>
+	        <div class="row p-0">  
+	          <div class="col-6 p-0">
+		          <canvas id="doughnut-chart3"></canvas>
+	          </div>
+	          <div class="col-6 p-0">
+		          <canvas id="doughnut-chart4"></canvas>
+		      </div>
+	        </div>
           </div>
         </div>
       </section>
@@ -1047,6 +1062,99 @@ for (var i=0;i<elems.length;i+=1){
 <!-- Custom scripts -->
 <script type="text/javascript" src="/js/script.js"></script>
 <script>
+// Chart
+const dataDoughnut1 = {
+  type: 'doughnut',
+  data: {
+    labels: ['Decrease in Churn'],
+    datasets: [
+      {
+        label: '',
+        data: [75, 25],
+        backgroundColor: [
+          '#C2027B',
+          '#f8fafd',
+        ],
+      },
+    ],
+  },
+  };
+
+new mdb.Chart(document.getElementById('doughnut-chart1'), dataDoughnut1);
+
+
+</script>
+<script>
+// Chart
+const dataDoughnut2 = {
+  type: 'doughnut',
+  data: {
+    labels: ['Increase in Retention'],
+    datasets: [
+      {
+        label: '',
+        data: [75, 25],
+        backgroundColor: [
+          '#C2027B',
+          '#f8fafd',
+        ],
+      },
+    ],
+  },
+  };
+
+new mdb.Chart(document.getElementById('doughnut-chart2'), dataDoughnut2);
+
+
+</script>
+<script>
+// Chart
+const dataDoughnut3 = {
+  type: 'doughnut',
+  data: {
+    labels: ['Increase in Community Health'],
+    datasets: [
+      {
+        label: '',
+        data: [75, 25],
+        backgroundColor: [
+          '#C2027B',
+          '#f8fafd',
+        ],
+      },
+    ],
+  },
+  };
+
+new mdb.Chart(document.getElementById('doughnut-chart3'), dataDoughnut3);
+
+
+</script>
+<script>
+// Chart
+const dataDoughnut4 = {
+  type: 'doughnut',
+  data: {
+    labels: ['Increase in Revenue'],
+    datasets: [
+      {
+        label: '',
+        data: [75, 25],
+        backgroundColor: [
+          '#C2027B',
+          '#f8fafd',
+        ],
+      },
+    ],
+  },
+  };
+
+new mdb.Chart(document.getElementById('doughnut-chart4'), dataDoughnut4);
+
+
+</script>
+
+<script>
 Chart.defaults.global.defaultFontColor = '#333';
 Chart.defaults.global.legend = false;
 
@@ -1133,6 +1241,8 @@ const intersectionCallback = (entries) => {
   observer.observe(target);
 </script>
 
+
+
 <script> // Chatbox Script
 	$('.chat-input input').keyup(function(e) {
   if ($(this).val() == '')
@@ -1141,8 +1251,6 @@ const intersectionCallback = (entries) => {
     $(this).attr('good', '');
 });
 </script>
-
-Resources
 
 </body>
 </html>
