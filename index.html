@@ -154,56 +154,56 @@
 	              <p class="text-white "data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="300">Please input your username.</p>
+				      data-mdb-animation-delay="100">Please input your username.</p>
 	              <div class="un-input-box mx-auto text-left" style="width: 100%;" data-mdb-toggle="animation"
 					      data-mdb-animation-start="onLoad"
 					      data-mdb-animation="fade-in"
-					      data-mdb-animation-delay="500">
+					      data-mdb-animation-delay="200">
 		              <h2 class="fs-1 text-dark mb-0 text-left" style="font-weight: 900; line-height: 1;">
 					  		<span><span id="demo1" class="wrap"></span></span>
 					  </h2>
 	              </div>
 	              
-					  <p class="text-danger mt-2 annotation-results" data-mdb-toggle="animation"
+					  <p class="text-danger mt-2 violation" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="5000">This username violates our community standards.</p>
+				      data-mdb-animation-delay="300">This username violates our community standards.</p>
 				      
 				      <p class="annotate-label annotation-results mt-2" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="5200">Decomposition: <span class="annotate inappropriate" data-mdb-toggle="animation"
+				      data-mdb-animation-delay="200">Decomposition: <span class="annotate inappropriate" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="5300">Toxic</span> <span class="annotate no-harm" data-mdb-toggle="animation"
+				      data-mdb-animation-delay="350">Toxic</span> <span class="annotate no-harm" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="5400">As</span> <span class="annotate profanity" data-mdb-toggle="animation"
+				      data-mdb-animation-delay="400">As</span> <span class="annotate profanity" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="5500">Fuck</span></span></p>
+				      data-mdb-animation-delay="450">Fuck</span></span></p>
 				      
-				      <p class="annotate-label mt-2" data-mdb-toggle="animation"
+				      <p class="annotate-label annotation-results mt-2" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="5700">Categories: <span class="annotate inappropriate" data-mdb-toggle="animation"
+				      data-mdb-animation-delay="100">Categories: <span class="annotate inappropriate" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="5900">Inappropriate</span> <span class="annotate profanity" data-mdb-toggle="animation"
+				      data-mdb-animation-delay="200">Inappropriate</span> <span class="annotate profanity" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="5800">Profanity</span></p>
+				      data-mdb-animation-delay="250">Profanity</span></p>
 				      
-				      <p class="annotate-label mt-2" data-mdb-toggle="animation"
+				      <p class="annotate-label annotation-results mt-2" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="6100">Toxic Elements: <span class="annotate inappropriate" data-mdb-toggle="animation"
+				      data-mdb-animation-delay="300">Toxic Elements: <span class="annotate inappropriate" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="6200">Toxic</span> <span class="annotate profanity" data-mdb-toggle="animation"
+				      data-mdb-animation-delay="350">Toxic</span> <span class="annotate profanity" data-mdb-toggle="animation"
 				      data-mdb-animation-start="onLoad"
 				      data-mdb-animation="fade-in"
-				      data-mdb-animation-delay="6300">Fuck</span></p>
+				      data-mdb-animation-delay="400">Fuck</span></p>
 				      </
 			      
 
@@ -1020,6 +1020,22 @@ for (var i=0;i<elems.length;i+=1){
 }
 
   }
+  function showViolation(){
+    var elems = document.getElementsByClassName('violation');
+for (var i=0;i<elems.length;i+=1){
+  elems[i].style.display = 'block';
+
+}
+
+  }
+  function hideViolation(){
+    var elems = document.getElementsByClassName('violation');
+for (var i=0;i<elems.length;i+=1){
+  elems[i].style.display = 'none';
+
+}
+
+  }
 </script>
 <script>
   var app = document.getElementById('demo1');
@@ -1031,14 +1047,17 @@ for (var i=0;i<elems.length;i+=1){
 
 
   typewriter
-    .pauseFor(2500)
+    .callFunction(()=> hideAnnotation())   
+    .callFunction(()=> hideViolation())        
+    .pauseFor(300)
     .typeString('KcufsAcixoT')
-    .callFunction(()=> showAnnotation())    
+    .callFunction(()=> showViolation())        
     .pauseFor(300)
     .deleteChars(3)
     .typeString('x07')
     .deleteChars(3)
     .typeString('><07')
+    .callFunction(()=> showAnnotation())        
     .pauseFor(1000)
     .start();
 </script>      
