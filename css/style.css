@@ -415,6 +415,7 @@ input[type=text]:-moz-placeholder { /* Firefox 18- */
     flex-direction: column;
     overflow: hidden;
     box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    border-radius: .5em;    
 }
 .chat-window {
     flex: auto;
