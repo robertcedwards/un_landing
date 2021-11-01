@@ -1,26 +1,5 @@
-Material Design for Bootstrap
-
+Username Moderation by Samurai Labs
 Version: MDB Pro 4.19.2
 
-Documentation:
-https://mdbootstrap.com/
-
-Getting started:
-https://mdbootstrap.com/docs/jquery/getting-started/download/
-
-Tutorials:
-MDB-Bootstrap: https://mdbootstrap.com/education/bootstrap/
-MDB-Wordpress: https://mdbootstrap.com/education/wordpress/
-
-Templates:
-https://mdbootstrap.com/templates/
-
-License:
-https://mdbootstrap.com/general/license/
-
-Support:
-https://mdbootstrap.com/forums/forum/support/
-
-Contact:
-office@mdbootstrap.com
+[![Netlify Status](https://api.netlify.com/api/v1/badges/997e36e6-aa55-4923-858d-5d7b006b5d68/deploy-status)](https://app.netlify.com/sites/usernamemod/deploys)
 
