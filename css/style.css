@@ -199,6 +199,30 @@ h3 {
 
 }
 
+.bmd-pink {
+	background-color: #f01d56;
+}
+
+.bmd-blue {
+	background-color: #00aefb;
+	
+}
+
+.bmd-dpurple {
+	background-color: #59007f;
+	
+}
+
+.bmd-grey {
+	background-color: #626061;
+	
+}
+
+.bmd-purple {
+	background-color: #492fcb;
+	
+}
+
 .annotate-label {
 	font-weight: 600;
 	color: #fff;
@@ -206,43 +230,43 @@ h3 {
 
 .annotate.no-harm {
 	color: #fff;
-    background-color: #999;
+    background-color: #626061;
 }
 
 .annotate.profanity {
 	color: #333;
-    background-color: #fbd400;
+    background-color: #00ff9a;
 }
 
 .annotate.inappropriate {
     color: #fff;
-    background-color: #fb9e00;
+    background-color: #492fcb;
 }
 
 .annotate.offensive {
 	color: #fff;
-    background-color: #fe3f02;
+    background-color: #59007f;
 }
 
 .annotate.sexual {
 	color: #fff;
-    background-color: #fe0000;
+	background-color: #f01d56;
 }
 
 .text-profanity {
-	color: #fbd400;
+	color: #00ff9a;
 }
 
 .text-inappropriate {
-	color: #fb9e00;
+	color: #492fcb;
 }
 
 .text-offensive {
-	color: #fe3f02;
+	color: #59007f;
 }
 
 .text-sexual {
-	color: #fe0000;
+	color: #f01d56;
 }
 
 
@@ -370,7 +394,7 @@ input[type=text]:-moz-placeholder { /* Firefox 18- */
 }
 
 .border-purp {
-	    border-color: #7c2eb2!important;
+	border-color: #7c2eb2!important;
 }
 
 
@@ -513,6 +537,23 @@ input[type=text]:-moz-placeholder { /* Firefox 18- */
 a.chat-link, a.chat-link:link {
 	color: #fff!important;
 	text-decoration: underline;
-	font-weight: bold;
-	
+	font-weight: bold;	
+}
+
+a.footer-link, a.footer-link, a.footer-link:active, a.footer-link:visited {
+	color: #757575!important;
+    transition: all 0.15s ease-in-out;
+}
+
+a.footer-link:hover {
+	opacity: .8;
+}
+
+.btn-pink {
+	background-color: #C2027B;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-pink.focus, .btn-pink:focus, .btn-pink:hover {
+	opacity: .8;
 }
