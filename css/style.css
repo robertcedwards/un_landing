@@ -234,8 +234,8 @@ h3 {
 }
 
 .annotate.profanity {
-	color: #333;
-    background-color: #00ff9a;
+	color: #fff;
+    background-color: #023591;
 }
 
 .annotate.inappropriate {
@@ -254,7 +254,7 @@ h3 {
 }
 
 .text-profanity {
-	color: #00ff9a;
+	color: #023591;
 }
 
 .text-inappropriate {
