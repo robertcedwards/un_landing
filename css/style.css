@@ -203,6 +203,9 @@ h3 {
 		line-height: 1;
 	}
 
+.bg-image	{
+      	height: 860px;
+  	}
 
 @media only screen 
   and (min-device-width: 375px) 
@@ -245,6 +248,15 @@ h3 {
 	p.violation {
 		
 	}
+	
+	html, body, header, .jarallax {
+		height: 120vh;
+	}
+	
+	.bg-image	{
+      	height: 1010px;
+  	}
+	
 
 }
 
@@ -608,3 +620,11 @@ a.footer-link:hover {
 .btn-pink.focus, .btn-pink:focus, .btn-pink:hover {
 	opacity: .8;
 }
+
+@media (max-width: 1195px) {
+         
+        }
+        
+        
+        
+        
