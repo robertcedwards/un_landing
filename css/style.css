@@ -206,6 +206,18 @@ h3 {
 .bg-image	{
       	height: 860px;
   	}
+  	
+.username-card-1 {
+	background-color: #333; min-height: 390px; height: auto;
+	}
+	
+.bdm-img-1 {
+	position: relative; left: 20px;
+}
+
+.bdm-img-2 {
+	position: relative; left: 24px;
+}
 
 @media only screen 
   and (min-device-width: 375px) 
@@ -249,7 +261,7 @@ h3 {
 		height: 50px;
 	}
 	
-	p.violation {
+	p.violation, p.violation-2 {
 		font-size: 14px;
 	}
 	
@@ -260,7 +272,18 @@ h3 {
 	.bg-image	{
       	height: 1010px;
   	}
+  	
+	.username-card-1 {
+	background-color: #333; min-height: 360px; height: auto;
+	}
 	
+	.bdm-img-1 {
+		position: relative; left: 0;
+	}
+	
+	.bdm-img-2 {
+		position: relative; left: 4px;
+	}
 
 }
 
@@ -299,17 +322,17 @@ h3 {
     background-color: #626061;
 }
 
-.annotate.profanity {
-	color: #fff;
+.annotate.inappropriate {
+    color: #fff;
     background-color: #492fcb;
 }
 
-.annotate.inappropriate {
-    color: #fff;
+.annotate.offensive {
+	color: #fff;
     background-color: #023591;
 }
 
-.annotate.offensive {
+.annotate.profanity {
 	color: #fff;
     background-color: #59007f;
 }
@@ -319,15 +342,15 @@ h3 {
 	background-color: #f01d56;
 }
 
-.text-profanity {
+.text-inappropriate {
 	color: #492fcb;
 }
 
-.text-inappropriate {
+.text-offensive {
 	color: #023591;
 }
 
-.text-offensive {
+.text-profanity {
 	color: #59007f;
 }
 
