@@ -20,6 +20,24 @@
   gtag('config', 'G-Q1QCKKXBD5');
 </script>
 
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1527806380949420');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1527806380949420&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
 <!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8395826.js"></script>
 <!-- End of HubSpot Embed Code -->
@@ -303,7 +321,7 @@
 
       <hr class="my-5" />
 
-      
+<div class="container">      
       <section id="DEMO">
         <h3 class="text-center mb-5">Protect Your Communities</h3>
 
@@ -372,6 +390,7 @@
 		  </div>
 	    </div>
       </section>
+</div>
 
       <hr class="my-5" />
 
@@ -544,7 +563,7 @@
       </section>
       
       <div class="row align-items-center mt-5">
-          <div class="col-lg-6 col-12 pe-lg-5 pe-3 mb-5 order-2 order-lg-1" style="">
+          <div class="col-lg-6 col-12 pe-lg-5 pe-3 mb-5 order-4 order-lg-1 mt-lg-0 mt-4" style="">
 	           <section class="chatbox">
 				    <section class="chat-window">
 				      <article class="msg-container msg-remote" id="msg-0" data-mdb-toggle="animation"
@@ -612,7 +631,7 @@
 				          <div class="flr">
 				            <div class="messages">
 				              <p class="msg">
-				                Thank you for helping us maintain a health community.
+				                Thank you for helping us maintain a healthy community.
 				              </p>
 				            </div>
 				            <span class="timestamp"><span class="username">Samurai Cyber Guardian</span></span>
@@ -632,7 +651,7 @@
             <p class="text-center text-muted mt-2 px-4">76% of cyberbullies voluntarily change their tone after being educated and redirected by Samurai's Cyber Guardian
             </p>
           </div>
-          <div class="col-lg-6 order-2 order-lg-1">
+          <div class="col-lg-6 order-1 order-lg-1">
             <div class="row mb-4">
               <div class="col-md-1 col-2">
                 <i class="fas fa-medkit fa-2x" style="color: #7c2eb2;"></i>
@@ -709,26 +728,21 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-12 ps-lg-5 ps-0">
-	        <div class="row p-0 mb-5">  
-	          <div class="col-6 p-0">
-	          </div>
-	          <div class="col-6 p-0">
-		      </div>
-	        </div>
-	        <div class="row p-0">  
-	          <div class="col-6 p-0">
-	          </div>
-	          <div class="col-6 p-0">
-		      </div>
-	        </div>
+          <div class="col-lg-6 col-12 pe-xl-5 pe-2">
+		          <canvas
+  data-mdb-chart="line"
+  data-mdb-dataset-label="Track How Samurai is Improving Your Communities"
+  data-mdb-labels="['Moderator Health', 'Community Health', 'Churn', 'Retention', 'ARPU']"
+  data-mdb-dataset-data="[200, 300, -200, 200, 400]"
+  data-mdb-dataset-border-color="['#7c2eb2' ]"
+></canvas>
           </div>
         </div>
         
         
         <div class="row align-items-center text-center mt-md-5 mt-4" style="">
 	        <div class="col-md-6 offset-md-3 col-12">
-          <button type="button" data-mdb-toggle="modal" data-mdb-target="#CyberGuardianModal" class="btn btn-dark btn-rounded btn-lg btn-pink" style="background-color: #C2027B; font-weight: 700; border-radius: 5px;">
+          <button type="button" data-mdb-toggle="modal" data-mdb-target="#cyberguardian" class="btn btn-dark btn-rounded btn-lg btn-pink" style="background-color: #C2027B; font-weight: 700; border-radius: 5px;">
             Inquire About the Cyber Guardian
           </button>
         </div>      
@@ -985,28 +999,31 @@
         <form name="contactus" id="un-api-request" action="/thank-you-iframe-un.html" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
                  <div class="row">
                    <div class="col-sm-6 col-12 mb-4">
-                    <div class="form-outline mb-4">
-                      <input type="text" id="Field9" name="Field9" class="form-control" required="">
-                      <label class="form-label" for="Field9" id="title9" style="margin-left: 0px;">Name</label>
+	                    <div class="form-outline mb-sm-0 mb-4">
+	                      <input type="text" id="Field9" name="Field9" class="form-control" required="">
+	                      <label class="form-label" for="Field9" id="title9" style="margin-left: 0px;">Name</label>
+	                   </div>
                    </div>
                    
                    <div class="col-sm-6 col-12">
                      
                <!-- Email input -->
-               <div class="form-outline mb-4">
-                 <input type="email" id="Field10" name="Field10" class="form-control" required="">
-                 <label class="form-label" for="Field10" id="title10">Work Email</label> <!-- can we autopopulate from initial form? -->
-                   </div>
-                 </div>
+		               <div class="form-outline mb-sm-0 mb-4">
+		                 <input type="email" id="Field10" name="Field10" class="form-control" required="">
+		                 <label class="form-label" for="Field10" id="title10">Work Email</label> <!-- can we autopopulate from initial form? -->
+	                	</div>
+	                </div>
+                </div>
                  
                <div class="row">
                  
-                 <div class="col-sm-6 col-12 mb-4">
+                 <div class="col-sm-6 col-12 mb-sm-0 mb-4">
                <!-- Email input -->
-               <div class="form-outline mb-4">
-                 <input type="text" id="Field12" name="Field12" class="form-control" required="">
-                 <label class="form-label" for="Field12" id="title12">Company</label>
+	               <div class="form-outline mb-4">
+	                 <input type="text" id="Field12" name="Field12" class="form-control" required="">
+	                 <label class="form-label" for="Field12" id="title12">Company</label>
                    </div>
+                 </div>
                    
                
                <div class="col-sm-6 col-12">
@@ -1015,8 +1032,8 @@
                    Send
                  </button>
                </div>
-         </div>
-         
+             </div>
+               
                  <div class="col-12">
                    <p class="text-left pb-0 mb-0 mb-2 text-center" style="font-size: .75rem; color: #bbb;">We Guarantee 100% Privacy. Your Information will not be shared.</p>
                  </div>
@@ -1032,17 +1049,19 @@
     </div>
   </div>
 </div>  
-<div
+
+
+  <div
     class="modal fade"
-    id="CyberGuardianModal"
+    id="cyberguardian"
     tabindex="-1"
-    aria-labelledby="CyberGuardianModalLabel"
+    aria-labelledby="cyberguardian"
     aria-hidden="true"
   >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="CyberGuardianModalLabel">Reach out about Cyber Guardian</h5>
+        <h5 class="modal-title" id="cyberguardian">Contact Us</h5>
         <button
           type="button"
           class="btn-close"
@@ -1054,28 +1073,31 @@
         <form name="cyberguardian" id="un-api-request" action="/thank-you-iframe-un.html" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
                  <div class="row">
                    <div class="col-sm-6 col-12 mb-4">
-                    <div class="form-outline mb-4">
-                      <input type="text" id="Field9" name="Field9" class="form-control" required="">
-                      <label class="form-label" for="Field9" id="title9" style="margin-left: 0px;">Name</label>
+	                    <div class="form-outline mb-sm-0 mb-4">
+	                      <input type="text" id="Field9" name="Field9" class="form-control" required="">
+	                      <label class="form-label" for="Field9" id="title9" style="margin-left: 0px;">Name</label>
+	                   </div>
                    </div>
                    
                    <div class="col-sm-6 col-12">
                      
                <!-- Email input -->
-               <div class="form-outline mb-4">
-                 <input type="email" id="Field10" name="Field10" class="form-control" required="">
-                 <label class="form-label" for="Field10" id="title10">Work Email</label> <!-- can we autopopulate from initial form? -->
-                   </div>
-                 </div>
+		               <div class="form-outline mb-sm-0 mb-4">
+		                 <input type="email" id="Field10" name="Field10" class="form-control" required="">
+		                 <label class="form-label" for="Field10" id="title10">Work Email</label> <!-- can we autopopulate from initial form? -->
+	                	</div>
+	                </div>
+                </div>
                  
                <div class="row">
                  
-                 <div class="col-sm-6 col-12 mb-4">
+                 <div class="col-sm-6 col-12 mb-sm-0 mb-4">
                <!-- Email input -->
-               <div class="form-outline mb-4">
-                 <input type="text" id="Field12" name="Field12" class="form-control" required="">
-                 <label class="form-label" for="Field12" id="title12">Company</label>
+	               <div class="form-outline mb-4">
+	                 <input type="text" id="Field12" name="Field12" class="form-control" required="">
+	                 <label class="form-label" for="Field12" id="title12">Company</label>
                    </div>
+                 </div>
                    
                
                <div class="col-sm-6 col-12">
@@ -1084,8 +1106,8 @@
                    Send
                  </button>
                </div>
-         </div>
-         
+             </div>
+               
                  <div class="col-12">
                    <p class="text-left pb-0 mb-0 mb-2 text-center" style="font-size: .75rem; color: #bbb;">We Guarantee 100% Privacy. Your Information will not be shared.</p>
                  </div>
