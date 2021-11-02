@@ -174,30 +174,80 @@ h3 {
 	font-weight: 700;
 }
 
-.annotate {
-	text-transform: uppercase;
-    vertical-align: bottom;
-    border: 0;
-    -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
-    font-weight: 500;
-    padding: 0.625rem 1rem 0.5rem;
-    font-size: .75rem;
-    line-height: 1.5;
-	 display: inline-block;
-    color: #4f4f4f;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border-radius: 5px;
-    font-weight: 700;
+
+	.annotate {
+		text-transform: uppercase;
+	    vertical-align: bottom;
+	    border: 0;
+	    -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+	    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+	    font-weight: 500;
+	    padding: 0.625rem 1.5rem 0.5rem;
+	    font-size: .75rem;
+	    line-height: 1.5;
+		 display: inline-block;
+	    color: #4f4f4f;
+	    text-align: center;
+	    text-decoration: none;
+	    vertical-align: middle;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    background-color: transparent;
+	    border-radius: 5px;
+	    font-weight: 700;
+		}
+		
+	h2.input-h2 {
+		line-height: 1;
+	}
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+	.annotate {
+		text-transform: uppercase;
+	    vertical-align: bottom;
+	    border: 0;
+	    -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+	    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+	    font-weight: 500;
+	    padding: 0.625rem 1rem 0.5rem;
+	    font-size: .6rem;
+	    line-height: 1.5;
+		 display: inline-block;
+	    color: #4f4f4f;
+	    text-align: center;
+	    text-decoration: none;
+	    vertical-align: middle;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    background-color: transparent;
+	    border-radius: 5px;
+	    font-weight: 700;
+	
+	}
+	
+	h2.input-h2 {
+		line-height: .8;
+	}
+	
+	.Typewriter__cursor {
+		position: relative;
+		top: 5px;
+	}
+	
+	p.violation {
+		
+	}
 
 }
+
 
 .bmd-pink {
 	background-color: #f01d56;
