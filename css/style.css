@@ -652,6 +652,11 @@ a.footer-link:hover {
          
         }
         
-        
+ @media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .75rem;
+    padding-left: .75rem;
+	}
+}
         
         
