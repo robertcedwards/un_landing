@@ -372,6 +372,10 @@ input[type=text]:-moz-placeholder { /* Firefox 18- */
 	color: #fff;
 }
 
+.form-control {
+    color: #fff!important;
+}
+
 .form-label {
 	line-height: 1.5;
 }
