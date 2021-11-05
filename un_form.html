@@ -47,20 +47,22 @@ src="https://www.facebook.com/tr?id=1527806380949420&ev=PageView&noscript=1"
 <!-- End of HubSpot Embed Code -->
 <script>
 	  function showSuccess(){
+		    hideForm();
+
     var elems = document.getElementsByClassName('form-success');
 
 for (var i=0;i<elems.length;i+=1){
   elems[i].style.display = 'block';
-  hideForm();
 
   }
 }
-
+</script>
+<script>
 	  function hideForm(){
 	var forms = document.getElementsByClassName('form-block');
 
 for (var i=0;i<forms.length;i+=1){
-  forms[i].style.display = 'none!important';
+	forms[i].style.display = 'none!important';
 
   }
 
@@ -71,15 +73,15 @@ for (var i=0;i<forms.length;i+=1){
 	<span class="form-success" style="display: none;"><h5 class="text-center mb-4">Thank You for Contacting Us at Samurai</h5>
         <p class="text-muted mb-4">
           We will email you as soon as possible regarding your cyber security needs.
-        </p></span>
-    <div class="d-flex justify-content-center form-block">
+        </p></span>		
+    <div class="d-flex justify-content-center" >
       <div class="text-center">	
 	
-		  <h5 class="text-center mb-4">Protection Starts Here</h5>
+		  <h5 class="text-center mb-4 ">Protection Starts Here</h5>
 		        <!--p class="text-muted mb-4 text-center">
 		        </p-->
 		
-		        <form name="un_form" id="un-api-request" action="javascript:showSuccess()" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+		        <form name="un_form" class="form-block" id="un-api-request" action="javascript:showSuccess();" method="POST" netlify-honeypot="bot-field" data-netlify="true">
 			        
 			     <!--p class="text-muted mb-4 text-center"> 
 		        </p-->   
@@ -160,7 +162,6 @@ for (var i=0;i<forms.length;i+=1){
 		        </form>
 		      </div>
 		    </div>
-
     <script type="text/javascript" src="/js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript" src="/js/script.js"></script>
