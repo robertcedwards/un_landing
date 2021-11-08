@@ -36,7 +36,7 @@ body {
   display: block;
 }
 .hidden {
-  display: none;
+  display: none!important;
 }
 .card {
 	    border-radius: 8px;
