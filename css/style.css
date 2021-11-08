@@ -652,6 +652,18 @@ a.footer-link:hover {
     transition: all 0.15s ease-in-out;
 }
 
+.form-label {
+	color: #fff;
+}
+
+.form-outline .form-control:focus {
+	color: #C2027B;
+}
+
+.form-outline .form-control:focus~.form-label {
+	color: #fff;
+}
+
 .btn-pink.focus, .btn-pink:focus, .btn-pink:hover {
 	opacity: .8;
 }
