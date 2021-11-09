@@ -436,6 +436,7 @@ input[type=text]:-moz-placeholder { /* Firefox 18- */
 .Typewriter__wrapper {
 	position: relative;
     top: 3px;
+    text-transform: none;
 }
  
 .logo-filter {
