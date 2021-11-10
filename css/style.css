@@ -223,6 +223,11 @@ h3 {
 	position: relative; left: 24px;
 }
 
+.form-check-input[type=radio] {
+	position: relative;
+	top: 2px;
+}
+
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
@@ -287,6 +292,11 @@ h3 {
 	
 	.bdm-img-2 {
 		position: relative; left: 4px;
+	}
+	
+.form-check-input[type=radio] {
+	position: relative;
+	top: 24px;
 	}
 
 }
@@ -708,3 +718,9 @@ a.text-link
 	background-color: transparent;
 
 }
+
+.form-check-inline {
+	margin-right: 0;
+}
+
+
