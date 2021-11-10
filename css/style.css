@@ -648,6 +648,16 @@ a.footer-link:hover {
 	opacity: .8;
 }
 
+a.text-link, a.text-link:link, a.text-link:active, a.text-link:visited {
+	color: #C2027B;
+    transition: all 0.15s ease-in-out;
+}
+a.text-link:hover {
+	opacity: .8;
+}
+
+a.text-link
+
 .btn-pink {
 	background-color: #C2027B;
     transition: all 0.15s ease-in-out;
