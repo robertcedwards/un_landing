@@ -541,6 +541,14 @@ src="https://www.facebook.com/tr?id=1527806380949420&ev=PageView&noscript=1"
           	</div>                    
 		  </div>
 	    </div>
+	    
+	      <div class="row align-items-center text-center mt-md-5 mt-4" style="">
+	        <div class="col-md-6 offset-md-3 col-12">
+	          <button type="button" data-mdb-toggle="modal" data-mdb-target="#unreportmodal" class="btn btn-dark btn-rounded btn-lg btn-pink" style="background-image: linear-gradient(310deg,#7c2eb2,#023591); font-weight: 700; border-radius: 5px;">
+	            Get a Free Username Report
+	          </button>
+	        </div>
+	      </div>
       </section>
 </div>
 
@@ -893,10 +901,17 @@ src="https://www.facebook.com/tr?id=1527806380949420&ev=PageView&noscript=1"
         
         
         <div class="row align-items-center text-center mt-md-5 mt-4" style="">
-	        <div class="col-md-6 offset-md-3 col-12">
-          <button type="button" data-mdb-toggle="modal" data-mdb-target="#cyberguardianmodal" class="btn btn-dark btn-rounded btn-lg btn-pink" style="background-color: #C2027B; font-weight: 700; border-radius: 5px;">
-            Inquire About the Cyber Guardian
-          </button>
+	        <div class="col-md-4 offset-md-2 col-12">
+	          <button type="button" data-mdb-toggle="modal" data-mdb-target="#chreportmodal" class="btn btn-dark btn-rounded btn-lg btn-pink" style="background-image: linear-gradient(310deg,#7c2eb2,#023591); font-weight: 700; border-radius: 5px;">
+	            Get a Free Community Health Report
+	          </button>
+	        </div>
+	        
+	       <div class="col-md-4 col-12">
+	          <button type="button" data-mdb-toggle="modal" data-mdb-target="#cyberguardianmodal" class="btn btn-dark btn-rounded btn-lg btn-pink" style="background-color: #C2027B; font-weight: 700; border-radius: 5px;">
+	            Inquire About the Cyber Guardian
+	          </button>
+	       </div>
         </div>      
       </section>
     </div>
@@ -1220,7 +1235,7 @@ src="https://www.facebook.com/tr?id=1527806380949420&ev=PageView&noscript=1"
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="cyberguardianmodal">Contact Us</h5>
+        <h5 class="modal-title">Contact Us</h5>
         <button
           type="button"
           class="btn-close"
@@ -1279,6 +1294,167 @@ src="https://www.facebook.com/tr?id=1527806380949420&ev=PageView&noscript=1"
                  </div>
            </form>
       </div>
+      <span class="modal-form-success" style="display: none;">
+        <h5 class="text-center mb-4">Thank You for Contacting Us at Samurai</h5>
+          <p class="mb-4">
+            We will email you as soon as possible regarding your cyber security needs.
+          </p>
+      </span>
+    </div>
+  </div>
+</div>        
+      
+        <div
+    class="modal fade"
+    id="unreportmodal"
+    tabindex="-1"
+    aria-labelledby="unrepor-modal"
+    aria-hidden="true"
+  >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Get Your Free Username Report</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-mdb-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form name="unreportform" class="modal-form-block" id="unreportform" action="/thank-you.html" method="POST"   data-netlify="true">
+                 <div class="row">
+                   <div class="col-sm-6 col-12 mb-4">
+	                    <div class="form-outline mb-sm-0 mb-4">
+	                      <input type="text" id="Field9" name="Field9" class="form-control" style="color: #333!important;" required/>
+	                      <label class="form-label" for="Field9" id="title9" style="margin-left: 0px;">Name</label>
+	                   </div>
+                   </div>
+                   
+                   <div class="col-sm-6 col-12">
+                     
+               <!-- Email input -->
+		               <div class="form-outline mb-sm-0 mb-4">
+		                 <input type="email" id="Field10" name="Field10" class="form-control" style="color: #333!important;" required/>
+		                 <label class="form-label" for="Field10" id="title10">Work Email</label>
+	                	</div>
+	                </div>
+                </div>
+                 
+               <div class="row">
+                 
+                 <div class="col-sm-6 col-12 mb-sm-0 mb-4">
+               <!-- Email input -->
+	               <div class="form-outline mb-4">
+	                 <input type="text" id="Field12" name="Field12" class="form-control" style="color: #333!important;" required/>
+	                 <label class="form-label" for="Field12" id="title12">Company</label>
+                   </div>
+                 </div>
+                   
+               
+               <div class="col-sm-6 col-12">
+             <!-- Submit button -->
+                 <button type="submit" id="saveForm" name="saveForm" value="Submit" class="btn btn-dark btn-block mb-4" style="background-color: #C2027B; font-weight:600;">    
+                   Send
+                 </button>
+               </div>
+             </div>
+               
+                 <div class="col-12">
+                   <p class="text-left pb-0 mb-0 mb-2 text-center" style="font-size: .75rem; color: #bbb;">We Guarantee 100% Privacy. Your Information will not be shared.</p>
+                 </div>
+         
+         
+                 <div class="row">
+                   <div class="input-group justify-content-center">
+             <div></div>
+                   </div>
+                 </div>
+           </form>
+      </div>
+            <span class="modal-form-success" style="display: none;">
+        <h5 class="text-center mb-4">Thank You for Contacting Us at Samurai</h5>
+          <p class="mb-4">
+            We will email you as soon as possible regarding your cyber security needs.
+          </p>
+      </span>
+    </div>
+  </div>
+</div>  
+
+
+  <div
+    class="modal fade"
+    id="chreportmodal"
+    tabindex="-1"
+    aria-labelledby="chreportmodal"
+    aria-hidden="true"
+  >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Get Your Free Community Health Report</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-mdb-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form name="chreportform" class="modal-form-block" id="chreportform" action="/thank-you.html" method="POST"   data-netlify="true">
+                 <div class="row">
+                   <div class="col-sm-6 col-12 mb-4">
+	                    <div class="form-outline mb-sm-0 mb-4">
+	                      <input type="text" id="Field9" name="Field9" class="form-control" style="color: #333!important;" required/>
+	                      <label class="form-label" for="Field9" id="title9" style="margin-left: 0px;">Name</label>
+	                   </div>
+                   </div>
+                   
+                   <div class="col-sm-6 col-12">
+                     
+               <!-- Email input -->
+		               <div class="form-outline mb-sm-0 mb-4">
+		                 <input type="email" id="Field10" name="Field10" class="form-control" style="color: #333!important;" required/>
+		                 <label class="form-label" for="Field10" id="title10">Work Email</label>
+	                	</div>
+	                </div>
+                </div>
+                 
+               <div class="row">
+                 
+                 <div class="col-sm-6 col-12 mb-sm-0 mb-4">
+               <!-- Email input -->
+	               <div class="form-outline mb-4">
+	                 <input type="text" id="Field12" name="Field12" class="form-control" style="color: #333!important;" required/>
+	                 <label class="form-label" for="Field12" id="title12">Company</label>
+                   </div>
+                 </div>
+                   
+               
+               <div class="col-sm-6 col-12">
+             <!-- Submit button -->
+                 <button type="submit" id="saveForm" name="saveForm" value="Submit" class="btn btn-dark btn-block mb-4" style="background-color: #C2027B; font-weight:600;">    
+                   Send
+                 </button>
+               </div>
+             </div>
+               
+                 <div class="col-12">
+                   <p class="text-left pb-0 mb-0 mb-2 text-center" style="font-size: .75rem; color: #bbb;">We Guarantee 100% Privacy. Your Information will not be shared.</p>
+                 </div>
+         
+         
+                 <div class="row">
+                   <div class="input-group justify-content-center">
+             <div></div>
+                   </div>
+                 </div>
+           </form>
+      </div>
+
+      
       <span class="modal-form-success" style="display: none;">
         <h5 class="text-center mb-4">Thank You for Contacting Us at Samurai</h5>
           <p class="mb-4">
