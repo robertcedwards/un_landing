@@ -700,21 +700,21 @@ a.text-link
 	}
 }
 
-#un-api-request input:-webkit-autofill,
-#un-api-request input:-webkit-autofill:hover, 
-#un-api-request input:-webkit-autofill:focus,
-#un-api-request textarea:-webkit-autofill,
-#un-api-request textarea:-webkit-autofill:hover,
-#un-api-request textarea:-webkit-autofill:focus,
-#un-api-request select:-webkit-autofill,
-#un-api-request select:-webkit-autofill:hover,
-#un-api-request select:-webkit-autofill:focus {
+.un-form input:-webkit-autofill,
+.un-form input:-webkit-autofill:hover, 
+.un-form input:-webkit-autofill:focus,
+.un-form textarea:-webkit-autofill,
+.un-form textarea:-webkit-autofill:hover,
+.un-form textarea:-webkit-autofill:focus,
+.un-form select:-webkit-autofill,
+.un-form select:-webkit-autofill:hover,
+.un-form select:-webkit-autofill:focus {
   -webkit-text-fill-color: #C2027B;
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
-#un-api-request input:-internal-autofill-selected {
+.un-form input:-internal-autofill-selected {
 	background-color: transparent;
 
 }
