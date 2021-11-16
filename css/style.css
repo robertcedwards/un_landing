@@ -1,6 +1,7 @@
 body {
 	font-family: "open sans", sans-serif;
 	line-height: 1.75;
+	overflow-x: hidden!important;
 }
     
 
