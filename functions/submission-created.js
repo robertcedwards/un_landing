@@ -10,7 +10,7 @@ exports.handler = async event => {
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({properties: 
+    body:{properties: 
         [ { property: 'firstname', value: 'HubSpot' },
           { property: 'lastname', value: 'Test' },
           { property: 'website', value: 'http://hubspot.com' },
@@ -20,7 +20,7 @@ exports.handler = async event => {
           { property: 'city', value: 'Cambridge' },
           { property: 'state', value: 'MA' },
           { property: 'zip', value: '02139' } ] }),
-  })
+  }
     .then(response => response.json())
     .then(data => {
       console.log(`Submitted to Buttondown:\n ${data}`)
