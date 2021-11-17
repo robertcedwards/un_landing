@@ -5,4 +5,8 @@
   "repository": "https://github.com/mdbootstrap/bootstrap-material-design.git",
   "author": "MDBootstrap",
   "license": "SEE LICENSE IN <License.pdf>"
+  ,
+  "dependencies": {
+      "dotenv": "10.0.0"
+    }
 }
