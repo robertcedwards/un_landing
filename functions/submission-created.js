@@ -4,8 +4,9 @@ const { EMAIL_TOKEN } = process.env
 exports.handler = async event => {
   const email = JSON.parse(event.body).payload.email
   console.log(`Recieved a submission: ${email}`)
-  return fetch('https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/testingapis@hubspot.com/?hapikey='+{EMAIL_TOKEN}, {
+  return fetch('https://api.hubapi.com/contacts/v1/contact/createOrUpdate/email/testingapis@hubspot.com/', {
     method: 'POST',
+    qs: { hapikey: {EMAIL_TOKEN} },
     headers: {
       'Content-Type': 'application/json',
     },
