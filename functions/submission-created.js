@@ -3,7 +3,7 @@ const { EMAIL_TOKEN } = process.env
 exports.handler = async event => {
   const email = JSON.parse(event.body).payload.email
   console.log(`Recieved a submission: ${email}`)
-}
+
 var request = require("request");
 
 var options = { method: 'POST',
@@ -23,7 +23,7 @@ var options = { method: 'POST',
         { property: 'state', value: 'MA' },
         { property: 'zip', value: '02139' } ] },
   json: true };
-
+}
 request(options, function (error, response, body) {
   if (error) throw new Error(error);
 
