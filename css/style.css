@@ -134,12 +134,14 @@ body {
 
 .navbar-nav .nav-item a.nav-link, .navbar-nav .nav-item a.nav-link, .navbar-nav .nav-item a.nav-link:active, .navbar-nav .nav-item a.nav-link:visited {
 	color:#fff;
+	-webkit-transition: color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out;
+    transition: color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out;
 }
 
 .navbar-nav .nav-item a.nav-link:hover {
-	-webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
     color: #9f9f9f;
+    color: #C2027B;
+    filter: brightness(150%);
 }
 
 .un-input-box {
@@ -723,5 +725,64 @@ a.text-link
 .form-check-inline {
 	margin-right: 0;
 }
+
+.nav.nav-tabs.unn-tabs {
+	margin-bottom: 0!important;
+	background-color: #eee;
+    transition: color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out,box-shadow .25s ease-in-out;
+}
+
+.nav-tabs.unn-tabs .nav-link {
+	
+    border-top: 2px solid #eee;
+	font-weight: 700;
+    font-size: 14px;
+    border-bottom: 2px solid #7c2eb2;
+    margin-bottom: 0!important;
+    transition: color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out,box-shadow .25s ease-in-out;
+}
+
+ul.nav-tabs.unn-tabs li:first-of-type a {
+    border-top-left-radius: 8px;
+}
+
+ul.nav-tabs.unn-tabs li:last-of-type a {
+    border-top-right-radius: 8px;
+}
+
+.nav-tabs.unn-tabs .nav-link.active {
+	background-color: #023591;
+    border-bottom: 2px solid transparent;
+	border-left: 2px solid #7c2eb2;
+    border-right: 2px solid #7c2eb2;
+    border-top: 2px solid #7c2eb2;
+    
+    color: #fff;
+}
+
+.nav-tabs.unn-tabs .nav-link {
+	background-color: #eee;
+}
+
+.tab-content.unm-tab-content .tab-pane {
+	background-color: #023591;
+	border-left: 2px solid #7c2eb2;
+    border-right: 2px solid #7c2eb2;
+    border-bottom: 2px solid #7c2eb2;
+    padding: 10px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: #fff;
+}
+
+
+.nav-tabs.unn-tabs .nav-link:hover {
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.nav-tabs.unn-tabs .nav-link.active:hover {
+	box-shadow: none;
+}
+
 
 
