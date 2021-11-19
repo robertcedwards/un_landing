@@ -669,7 +669,10 @@ a.text-link:hover {
 	opacity: .8;
 }
 
-a.text-link
+a.text-link i {
+	position: relative;
+    top: 1px;
+}
 
 .btn-pink {
 	background-color: #C2027B;
