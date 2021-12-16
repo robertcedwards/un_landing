@@ -646,7 +646,6 @@ input[type=text]:-moz-placeholder { /* Firefox 18- */
     text-align: right;
 }
 
-
 a.chat-link, a.chat-link:link {
 	color: #fff!important;
 	text-decoration: underline;
