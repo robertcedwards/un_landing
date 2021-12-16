@@ -117,6 +117,7 @@ body {
 	text-align: right;
 	margin-right: 1rem;
 	color: #9f9f9f;
+	font-style: italic;
 }
 
 .navbar-scroll .nav-link,
@@ -665,7 +666,13 @@ a.text-link, a.text-link:link, a.text-link:active, a.text-link:visited {
 	color: #C2027B;
     transition: all 0.15s ease-in-out;
 }
-a.text-link:hover {
+
+a.text-link-b, a.text-link-b:link, a.text-link-b:active, a.text-link-b:visited {
+	color: #7c2eb2;
+    transition: all 0.15s ease-in-out;
+}
+
+a.text-link:hover, a.text-link-b:hover {
 	opacity: .8;
 }
 
