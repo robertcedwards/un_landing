@@ -1781,7 +1781,7 @@ const intersectionCallback = (entries) => {
     body: data,
   })
   .then(() => {
-    form.innerHTML = `<div class="form--success">Almost there! Check your inbox for a confirmation e-mail.</div>`;
+    form.innerHTML = `<div class="form--success">Thanks we'll contact you with details.</div>`;
   })
   .catch(error => {
     form.innerHTML = `<div class="form--error">Error: ${error}</div>`;
